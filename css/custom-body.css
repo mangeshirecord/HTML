@@ -55,9 +55,10 @@ body {
 .whitespace_nowrap{white-space: nowrap;}
 
 .form_2 .col-md-6 > label{
-	-ms-flex: 0 0 110px;
-	flex: 0 0 110px;
-	max-width: 110px;
+	-ms-flex: 0 0 130px;
+	flex: 0 0 130px;
+	max-width: 130px;
+    padding-right: 5px;
 }
 
 .form_2 .form-check .form-check-label {
@@ -68,6 +69,8 @@ table tr th,
 table tr td{
     vertical-align: middle;
 }
+
+.table .table-light{background: #F00;}
 
 .table > :not(caption) > * > *{
     padding: .6rem .65rem;
