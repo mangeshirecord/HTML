@@ -67,3 +67,11 @@
 		}) 
         // Waves.init()
 }(jQuery);
+
+
+const date = new Date();
+const formattedDate = date.toLocaleDateString('en-GB', {
+	day: 'numeric', month: 'short', year: 'numeric'
+}).replace(/ /g, '-');
+
+document.getElementById('new_date').innerHTML = formattedDate;

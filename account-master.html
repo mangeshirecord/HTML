@@ -11,7 +11,7 @@
 	<link rel="stylesheet" href="css/app.min.css" />
 	<link rel="stylesheet" href="css/custom-body.css" />
 
-	<title>Group Master :: iRock</title>
+	<title>Account Master :: iRecord</title>
 </head>
 <body class="inner_body">
 	<form id="" class="" method="POST" action="">
@@ -223,7 +223,7 @@
                         <div class="row">
                             <div class="col-12">
                                 <div class="page-title-box d-flex align-items-center justify-content-between">
-                                    <h4 class="mb-0">Group Master</h4>
+                                    <h4 class="mb-0">Account Master</h4>
 
                                     <div class="page-title-right">
                                         <a href="#modal_add" data-bs-toggle="modal" class="px-2 btn btn-primary"><i class="las la-plus font-size-18"></i> Add New</a>
@@ -286,14 +286,20 @@
                                         <thead class="table-light">
                                             <tr>
                                                 <th>#</th>
-                                                <th>Family Name</th>
+                                                <th>Name</th>
+                                                <th>Group</th>
+                                                <th>Opening</th>
+                                                <th>DR/CR</th>
                                                 <th>Actions</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <th scope="row">1</th>
+                                                <td scope="row">1</td>
+                                                <td>Rahul Gupta</td>
                                                 <td class="text-uppercase">BHARTI AIRTEL LTD.</td>
+                                                <td>10,000.00</td>
+                                                <td>50,000.00</td>
                                                 <td class="whitespace_nowrap">
                                                     <ul class="list-inline mb-0">
                                                         <li class="list-inline-item">
@@ -309,15 +315,18 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <th scope="row">2</th>
-                                                <td class="text-uppercase">Hindustan Unilever Limited</td>
+                                                <td scope="row">2</td>
+                                                <td>Rahul Gupta</td>
+                                                <td class="text-uppercase">BHARTI AIRTEL LTD.</td>
+                                                <td>10,000.00</td>
+                                                <td>50,000.00</td>
                                                 <td class="whitespace_nowrap">
                                                     <ul class="list-inline mb-0">
                                                         <li class="list-inline-item">
-                                                            <a href="javascript:void(0);" class="px-2 btn btn-outline-primary"><i class="las la-search font-size-18"></i></a>
+                                                            <a href="#modal_view" data-bs-toggle="modal" class="px-2 btn btn-outline-primary"><i class="las la-search font-size-18"></i></a>
                                                         </li>
                                                         <li class="list-inline-item">
-                                                            <a href="javascript:void(0);" class="px-2 btn btn-outline-primary"><i class="las la-pencil-alt font-size-18"></i></a>
+                                                            <a href="#modal_add" data-bs-toggle="modal" class="px-2 btn btn-outline-primary"><i class="las la-pencil-alt font-size-18"></i></a>
                                                         </li>
                                                         <li class="list-inline-item">
                                                             <a href="javascript:void(0);" onclick="myFunction()" class="px-2 btn btn-outline-danger"><i class="las la-trash-alt font-size-18"></i></a>
@@ -455,7 +464,7 @@
             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="staticBackdropLabel">View Group Master</h5>
+                        <h5 class="modal-title" id="staticBackdropLabel">View Account Master</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
@@ -533,13 +542,13 @@
             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="staticBackdropLabel">Add Group Master</h5>
+                        <h5 class="modal-title" id="staticBackdropLabel">Add Account Master</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
                         <div class="row form_2">
                             <div class="col-sm-12 col-md-6 mb-3 d-flex">
-                                <label class="mb-0">Group Name <span class="text-danger">*</span>:</label>
+                                <label class="mb-0">Name <span class="text-danger">*</span>:</label>
                                 <input type="text" id="family_name" name="family_name" class="form-control" placeholder="Enter Short Name" />
                             </div>
                             <div class="col-sm-12 col-md-6 mb-3 d-flex">

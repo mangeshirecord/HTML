@@ -10,18 +10,7 @@
 	<link rel="stylesheet" href="css/theme-color.css" />
 	<link rel="stylesheet" href="css/app.min.css" />
 	<link rel="stylesheet" href="css/custom-body.css" />
-	<title>Dashboard :: iRock</title>
-
-    <script>
-        window.googletag = window.googletag || {cmd: []};
-        googletag.cmd.push(function() {
-          googletag
-              .defineSlot(
-                  '/6355419/Travel/Europe/France/Paris', [300, 250], 'banner-ad')
-              .addService(googletag.pubads());
-          googletag.enableServices();
-        });
-      </script>
+	<title>Dashboard Long Term :: iRock</title>
 </head>
 <body class="inner_body">
 	<form id="" class="" method="POST" action="">
@@ -192,22 +181,14 @@
                 <div class="page-content">
                     <div class="container-fluid">
 
-                        <div id="banner-ad" style="width: 300px; height: 250px;">
-                            <script>
-                              googletag.cmd.push(function() {
-                                googletag.display('banner-ad');
-                              });
-                            </script>
-                          </div>
-
                         <!-- start page title -->
                         <div class="row">
                             <div class="col-12">
                                 <div class="page-title-box d-flex align-items-center justify-content-between">
-                                    <h4 class="mb-0">Dashboard</h4>
+                                    <h4 class="mb-0">Dashboard Long Term</h4>
 
                                     <div class="page-title-right">
-                                        
+                                        <a href="dashboard.html" class="btn btn-dark"><i class="la la-angle-left"></i> Back To Index</a>
                                     </div>
 
                                 </div>
@@ -216,79 +197,55 @@
                         <!-- end page title -->
 
                         <div class="card dashboard_par">
-                            <div class="card-body">
-                                <div class="top_member_selection">
-                                    <div class="row">
-                                        <div class="col">
-                                            <div class="mt-1 mb-1 form-group d-flex flex-column">
-                                                <label class="mb-0">Select Member:</label>
-                                                <select class="form-select">
-                                                    <option>-- Select Member --</option>
-                                                    <option>Member 1</option>
-                                                    <option>Member 2</option>
-                                                    <option>Member 3</option>
-                                                </select>
+                            <div class="card-body chart_div">
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-6">
+                                        <div class="chart_box" id="chartdiv_4"></div>
+                                    </div>
+                                    <div class="col-sm-12 col-md-6">
+                                        <div class="card card_profit">
+                                            <h5 class="card-header">Advisor Making Money For Me</h5>
+                                            <div class="card-body">
+                                                <div class="table-responsive">
+                                                    <table class="table table-hover table-bordered mb-0">
+                                                        <tbody>
+                                                            <tr>
+                                                                <th>Narnolia</th>
+                                                                <td><i class="la la-rupee"></i>20000</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>Sar</th>
+                                                                <td><i class="la la-rupee"></i>15000</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="col">
-                                            <div class="mt-1 mb-1 form-group d-flex flex-column">
-                                                <label class="mb-0">Select Consultant:</label>
-                                                <select class="form-select">
-                                                    <option>-- Select Consultant --</option>
-                                                    <option>Consultant 1</option>
-                                                    <option>Consultant 2</option>
-                                                    <option>Consultant 3</option>
-                                                </select>
+
+                                        <div class="card card_loss">
+                                            <h5 class="card-header">Advisor I Need To Be Cautious About</h5>
+                                            <div class="card-body">
+                                                <div class="table-responsive">
+                                                    <table class="table table-hover table-bordered mb-0">
+                                                        <tbody>
+                                                            <tr>
+                                                                <th>Jat</th>
+                                                                <td><i class="la la-rupee"></i>20000</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>Self</th>
+                                                                <td><i class="la la-rupee"></i>15000</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="col d-flex align-items-end submit_div mb-1">
-                                            <input type="submit" value="Submit" class="btn btn-primary" />
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-                        <div class="row">
-                            <div class="col-sm-12 col-md-6">
-                                <div class="card dashboard_par">
-                                    <div class="card-body chart_div">
-                                        <div class="d-flex justify-content-between mb-3">
-                                            <h4 class="mb-1">Market Value - <span>1,00,000</span></h4>
-                                            <a href="dashboard-market-value.html" class="whitespace_nowrap align-self-start btn btn-primary btn-sm mb-1">View All</a>
-                                        </div>
-
-                                        <div class="chart_box" id="chartdiv_1"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-12 col-md-6">
-                                <div class="card dashboard_par">
-                                    <div class="card-body chart_div">
-                                        <div class="d-flex justify-content-between mb-3">
-                                            <h4 class="mb-1">Long Term - <span>64,000</span></h4>
-                                            <a href="dashboard-long-term.html" class="whitespace_nowrap align-self-start btn btn-primary btn-sm mb-1">View All</a>
-                                        </div>
-
-                                        <div class="chart_box" id="chartdiv_2"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-12 col-md-6">
-                                <div class="card dashboard_par">
-                                    <div class="card-body chart_div">
-                                        <div class="d-flex justify-content-between mb-3">
-                                            <h4 class="mb-1">Short Term - <span>36,000</span></h4>
-                                            <a href="dashboard-short-term.html" class="whitespace_nowrap align-self-start btn btn-primary btn-sm mb-1">View All</a>
-                                        </div>
-
-                                        <div class="chart_box" id="chartdiv_3"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-
 
                         <!-- Working Area -->
 
@@ -312,57 +269,6 @@
         </div>
         <!-- END layout-wrapper -->
 
-        <!-- Right Sidebar -->
-        <div class="right-bar">
-            <div data-simplebar="" class="h-100">
-
-                <div class="rightbar-title d-flex align-items-center px-3 py-4">
-            
-                    <h5 class="m-0 me-2">Settings</h5>
-
-                    <a href="javascript:void(0);" class="right-bar-toggle ms-auto">
-                        <i class="mdi mdi-close noti-icon"></i>
-                    </a>
-                </div>
-
-
-
-                <!-- Settings -->
-                <hr class="mt-0">
-                <h6 class="text-center mb-0">Choose Layouts</h6>
-
-                <div class="p-4">
-                    <div class="mb-2">
-                        <img src="assets\images\layouts\layout-1.jpg" class="img-fluid img-thumbnail" alt="">
-                    </div>
-                    <div class="form-check form-switch mb-3">
-                        <input type="checkbox" class="form-check-input theme-choice" id="light-mode-switch" checked="">
-                        <label class="form-check-label" for="light-mode-switch">Light Mode</label>
-                    </div>
-    
-                    <div class="mb-2">
-                        <img src="assets\images\layouts\layout-2.jpg" class="img-fluid img-thumbnail" alt="">
-                    </div>
-                    <div class="form-check form-switch mb-3">
-                        <input type="checkbox" class="form-check-input theme-choice" id="dark-mode-switch" data-bsstyle="assets/css/bootstrap-dark.min.css" data-appstyle="assets/css/app-dark.min.css">
-                        <label class="form-check-label" for="dark-mode-switch">Dark Mode</label>
-                    </div>
-    
-                    <div class="mb-2">
-                        <img src="assets\images\layouts\layout-3.jpg" class="img-fluid img-thumbnail" alt="">
-                    </div>
-                    <div class="form-check form-switch mb-5">
-                        <input type="checkbox" class="form-check-input theme-choice" id="rtl-mode-switch" data-appstyle="assets/css/app-rtl.min.css">
-                        <label class="form-check-label" for="rtl-mode-switch">RTL Mode</label>
-                    </div>
-
-            
-                </div>
-
-            </div> <!-- end slimscroll-menu-->
-        </div>
-        <!-- /Right-bar -->
-
         <!-- Right bar overlay-->
         <div class="rightbar-overlay"></div>
 		</div>
@@ -379,9 +285,7 @@
     <script src="js/amchart/core.js"></script>
     <script src="js/amchart/charts.js"></script>
     <script src="js/amchart/animated.js"></script>
-    <script src="js/amchart/chart-data-1.js"></script>
-    <script src="js/amchart/chart-data-2.js"></script>
-    <script src="js/amchart/chart-data-3.js"></script>
+    <script src="js/amchart/chart-data-4.js"></script>
 </body>
 
 </html>
