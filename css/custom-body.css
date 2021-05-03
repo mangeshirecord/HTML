@@ -19,6 +19,16 @@ body {
     overflow-x: hidden;
 }
 
+img{
+    max-width: 100%;
+    outline: none;
+}
+
+h1, h1, h3, h4, h5, h6{
+    font-family: var(--font_w_5);
+    font-weight: normal !important;
+}
+
 /* =============================================
     Common CSS
 ============================================= */
@@ -28,7 +38,8 @@ body {
 .pl-1{padding-left: 5px !important;}
 
 .vertical-collpsed .vertical-menu #sidebar-menu>ul>li>a,
-#sidebar-menu ul li a.has-arrow{
+#sidebar-menu ul li a.has-arrow,
+.sar-table .drag_div .svg_icon{
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
 }
@@ -325,6 +336,8 @@ small{font-size: 81%;}
     font-size: .81rem;
 }
 
+.intra_center{min-width: 80px;}
+
 .intra_center .form-check{
     width: 1.5em;
     margin: 0 auto !important;
@@ -349,6 +362,71 @@ small{font-size: 81%;}
     width: 30%;
 }
 
+.table.sar-table th{
+    position: relative;
+}
+
+.sar-table .drag_div{
+    text-align: center;
+    cursor: pointer;
+    position: absolute;
+    left: 0; right: 0; top: 6px;
+}
+
+.sar-table .drag_div svg{height: 7px;}
+
+.sar-table .drag_div .svg_icon{
+    fill: #495057;
+
+}
+
+.sar-table .drag_div:hover .svg_icon,
+.sar-table .drag_div:active .svg_icon{
+    fill: rgba(var(--bs-primary),1) !important;
+}
+
+.tbl_int_grp [class*="form-"]{
+    font-size: .81rem;
+    padding: .27rem 1.75rem .27rem .2rem;
+}
+
+.tbl_int_grp .btn{
+    border-radius: 0 4px 4px 0 !important;
+}
+.table .tbl_int_grp .btn{
+    border-color: rgba(var(--bs-primary),1) !important;
+}
+
+/* .tbl_int_grp [class*="form-"],
+.tbl_int_grp .btn{
+    height: 32px;
+} */
+
+.sar-table .top_padding{
+    display: inline-block;
+    margin-top: 20px;
+    /* border: 1px solid red; */
+    width: 100%;
+}
+
+.display_ad_parent{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.display_ad_view_box{
+    flex: 1;
+}
+
+.display_ad_view_box{margin-right: 15px;}
+
+.display_ad_view_box .row > .col-sm-12.col-md-6{
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    width: 100%;
+}
+
 /* =============================================
     Responsive
 ============================================= */
@@ -368,4 +446,22 @@ small{font-size: 81%;}
     .navbar-header {
         float: none !important;
     }
+}
+
+@media (min-width:991.99px) {
+    .mobile_ad{display: none;}
+}
+
+@media (max-width:991.99px) {
+    .display_ad_parent{
+        flex-direction: column;
+    }
+
+    .display_ad_parent .display_ad {
+        order: 0;
+    }
+    .display_ad_parent .display_ad_view_box {
+        order: 1;
+    }
+    .desktop_ad{display: none;}
 }
