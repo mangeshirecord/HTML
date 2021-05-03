@@ -66,7 +66,7 @@
       exact: true,                 // removes pixels, so that the overlay table width fits exactly the original table width
       clickDelay: 10,              // ms to wait before rendering sortable list and delegating click event
       containment: null,           // @see http://api.jqueryui.com/sortable/#option-containment, use it if you want to move in 2 dimesnions (together with axis: null)
-      cursor: 'move',              // @see http://api.jqueryui.com/sortable/#option-cursor 
+      cursor: 'move',              // @see http://api.jqueryui.com/sortable/#option-cursor
       cursorAt: false,             // @see http://api.jqueryui.com/sortable/#option-cursorAt
       distance: 0,                 // @see http://api.jqueryui.com/sortable/#option-distance, for immediate feedback use "0"
       tolerance: 'pointer',        // @see http://api.jqueryui.com/sortable/#option-tolerance

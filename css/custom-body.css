@@ -377,7 +377,6 @@ small{font-size: 81%;}
 
 .sar-table .drag_div .svg_icon{
     fill: #495057;
-
 }
 
 .sar-table .drag_div:hover .svg_icon,
@@ -385,9 +384,18 @@ small{font-size: 81%;}
     fill: rgba(var(--bs-primary),1) !important;
 }
 
+.tbl_int_grp{
+    flex-wrap: nowrap;
+}
+
 .tbl_int_grp [class*="form-"]{
     font-size: .81rem;
     padding: .27rem 1.75rem .27rem .2rem;
+    min-width: 180px;
+}
+
+.tbl_int_grp select option{
+    font-family: var(--bs-font-sans-serif);
 }
 
 .tbl_int_grp .btn{
