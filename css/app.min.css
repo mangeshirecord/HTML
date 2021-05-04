@@ -3198,7 +3198,7 @@ input[switch=dark]:checked+label {
 }
 
 .datepicker {
-	border: 1px solid #f5f6f8;
+	/* border: 1px solid #f5f6f8; */
 	padding: 8px;
 	z-index: 999!important
 }
