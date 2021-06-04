@@ -493,15 +493,39 @@ small{font-size: 81%;}
 .user_rights_par .accordion-item .accordion-button{
     padding: .5rem;
     box-shadow: none;
-    border-bottom: 1px solid rgba(0,0,0,.125) !important;
+    border: none;
 } 
-.user_rights_par .accordion-body {padding: .5rem;}
+
 .user_rights_par .collapse_L_1 .accordion-item{border: 0;}
 .user_rights_par .collapse_L_1 .accordion-body{
-    border: none !important;
-    padding: 0;
-    /* padding-left: 0;
-    padding-right: 0; */
+    border: none;
+    padding-right: .5rem;
+}
+
+.user_rights_par .panel_inner_body,
+.user_rights_par .accordion-body {
+    padding: .5rem 0 .5rem .5rem;
+    border-top: 1px solid rgba(0,0,0,.125) !important;
+}
+
+/* .user_rights_par .accordion-body:last-child{border: 2px solid red;} */
+
+.flex_1{
+    flex: 1 0 auto;
+}
+
+.panel_inner_list{
+    padding-left: 27px;
+    margin-bottom: 10px;
+}
+
+.panel_inner_list li{
+    padding: 6px 0;
+    list-style: none;
+}
+
+.panel_inner_body{
+    /* padding-left: 35px !important; */
 }
 
 .user_rights_par .accordion-button:not(.collapsed)::after {display: none;}
@@ -543,7 +567,7 @@ small{font-size: 81%;}
 } */
 
 .inves_list{
-    padding: 10px 10px 10px 35px;
+    padding: 10px;
     margin: 0;
 }
 
@@ -595,6 +619,10 @@ small{font-size: 81%;}
 @media (max-width:575.99px) {
 
     .page-title-box h1{margin-bottom: 7px !important;}
+
+    .user_rights_par .collapse_L_1 .accordion-body{
+        padding: 0;
+    }
     
 }
 
