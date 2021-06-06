@@ -605,7 +605,7 @@ small{font-size: 81%;}
         flex-direction: column;
     }
 
-    .display_ad_parent .display_ad {
+    .display_ad_parent .display_adds {
         order: 0;
     }
     .display_ad_parent .display_ad_view_box {
