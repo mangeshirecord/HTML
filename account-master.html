@@ -177,44 +177,7 @@
                     <!--- Sidemenu -->
                     <div id="sidebar-menu">
                         <!-- Left Menu Start -->
-                        <ul class="metismenu list-unstyled" id="side-menu">
-                            <li>
-                                <a href="dashboard.html">
-                                    <i class="la la-home"></i>
-                                    <span>Dashboard</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript: void(0);" class="has-arrow waves-effect">
-                                    <i class="la la-sitemap"></i>
-                                    <span>Masters</span>
-                                </a>
-                                <ul class="sub-menu" aria-expanded="false">
-                                    <li><a href="scripts-master.html">Script Master</a></li>
-                                    <li><a href="family-master.html">Family Master</a></li>
-                                    <li><a href="member-master.html">Member Master</a></li>
-                                    <li><a href="group-master.html">Group Master</a></li>
-                                    <li><a href="other-invesment-master.html">Other Invesment Master</a></li>
-                                    <li><a href="industry-master.html">Industry Master</a></li>
-                                    <li><a href="narration-master.html">Narration Master</a></li>
-                                    <li><a href="consultant-master.html">Consultant Master</a></li>
-                                    <li><a href="account-master.html">Account Master</a></li>
-                                    <li><a href="broker-bill-view.html">Broker Bill View</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="bonus-entry-screen.html">
-                                    <i class="las la-gift"></i>
-                                    <span>Bonus Entry</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="user-security.html">
-                                    <i class="las la-user-cog"></i>
-                                    <span>User Security</span>
-                                </a>
-                            </li>
-                        </ul>
+                        <script src="js/sidebar.js"></script>
                     </div>
                     <!-- Sidebar -->
                 </div>
@@ -655,6 +618,24 @@
             var txt;
             var r = confirm("Do you want to delete record?");
         }
+    </script>
+
+    <script src="js/custom-script.js"></script>
+    <script type="text/javascript">
+        function addLoadEvent(func) {
+            var oldonload = window.onload;
+            if (typeof window.onload != 'function') {
+                window.onload = func;
+            } else {
+                window.onload = function () {
+                    if (oldonload) {
+                        oldonload();
+                    }
+                }
+            }
+        }
+        addLoadEvent(setmenu('2'));
+        addLoadEvent(setsubmenu('9'));
     </script>
 </body>
 
