@@ -597,7 +597,7 @@ small{font-size: 81%;}
 }
 
 @media (min-width:991.99px) {
-    .mobile_ad{display: none;}
+    .mobile_adds{display: none;}
 }
 
 @media (max-width:991.99px) {
@@ -612,7 +612,7 @@ small{font-size: 81%;}
         order: 1;
         margin-right: 0;
     }
-    .desktop_ad{display: none;}
+    .desktop_adds{display: none;}
 
 }
 
