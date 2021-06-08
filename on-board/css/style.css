@@ -740,14 +740,14 @@ ul.checkout-bar li.visited a {
 	position: relative;
 }
 
-.checkout-bar:before{
+/* .checkout-bar:before{
 	content: "";
 	background: transparent;
 	position: absolute;
 	left: 0; top: 0;
 	right: 0; bottom: 0;
 	z-index: 15;
-}
+} */
 
 .checkout-bar li{
 	padding-left: 3px;
@@ -929,6 +929,11 @@ ul.checkout-bar li.visited:after {
 	margin-top: 5px;
 }
 
+
+.script_list table tr th,
+.script_list table tr td{
+	vertical-align: middle;
+}
 
 
   
