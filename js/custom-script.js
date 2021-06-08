@@ -32,3 +32,19 @@ function setsubmenu(tp_1) {
         }
     }
 }
+
+function setreportsmenu(reports_list) {
+    var reports = $(".sub-menu li").length;
+    for (i = 1; i <= reports; i++) {
+        if (eval(i) == reports_list) 
+    {
+      if(document.getElementsByClassName("reports_" + i))
+            $(".reports_" + i).addClass("mm-active");
+        }
+    else 
+    {
+      if(document.getElementsByClassName("reports_" + i))
+            $(".reports_" + i).removeClass("mm-active");
+        }
+    }
+}
