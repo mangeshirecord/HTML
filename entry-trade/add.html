@@ -221,7 +221,14 @@
                                         <div class="row form_2">
                                             <div class="col-sm-12 col-md-6 mb-3 d-flex">
                                                 <label class="mb-0">Investment Type:</label>
-                                                <input type="text" id="first_name" name="first_name" class="form-control" placeholder="Enter Equity/F&O/MCX/NCDEX/Currency" />
+                                                <select class="form-select select2-hide_search">
+                                                    <option>-- Select Investment Type --</option>
+                                                    <option>Equity</option>
+                                                    <option>F&O</option>
+                                                    <option>MCX</option>
+                                                    <option>NCDEX</option>
+                                                    <option>Currency</option>
+                                                </select>
                                             </div>
                                             <div class="col-sm-12 col-md-6 mb-3 d-flex">
                                                 <label class="mb-0">Broker:</label>
@@ -335,6 +342,9 @@
         $(document).ready(function() {
             $(".select2").select2({
 				maximumSelectionLength: 3
+			});
+            $(".select2-hide_search").select2({
+				minimumResultsForSearch: Infinity
 			});
 
             $('.datepicker').datepicker({

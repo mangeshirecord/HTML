@@ -39,6 +39,11 @@ h1, h1, h3, h4, h5, h6{
 
 .dropdown-item{padding: .35rem .9rem;}
 
+.table th {
+    font-weight: normal;
+    font-family: var(--font_w_6);
+}
+
 .vertical-collpsed .vertical-menu #sidebar-menu>ul>li>a,
 #sidebar-menu ul li a.has-arrow,
 .sar-table .drag_div .svg_icon{
