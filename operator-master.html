@@ -12,7 +12,7 @@
 	<link rel="stylesheet" href="css/app.min.css" />
 	<link rel="stylesheet" href="css/custom-body.css" />
 
-	<title>Member Master :: iRecord</title>
+	<title>Operator Master :: iRecord</title>
 </head>
 <body class="inner_body">
 	<form id="" class="" method="POST" action="">
@@ -49,7 +49,7 @@
                         <div class="d-flex align-content-center">
                             <div class="m-auto" id="new_date">21-Apr-2021</div>
                         </div>
-
+                        
                         <div class="dropdown d-none d-lg-inline-block ms-1">
                             <button type="button" class="btn header-item noti-icon waves-effect" data-bs-toggle="fullscreen">
                                 <i class="las la-arrows-alt"></i>
@@ -203,7 +203,7 @@
                         <div class="row">
                             <div class="col-12">
                                 <div class="page-title-box d-flex align-items-center justify-content-between">
-                                    <h4 class="mb-0">Member Master</h4>
+                                    <h4 class="mb-0">Operator Master</h4>
 
                                     <div class="page-title-right">
                                         <a href="#modal_add" data-bs-toggle="modal" class="px-2 btn btn-primary"><i class="las la-plus font-size-18"></i> Add New</a>
@@ -261,38 +261,20 @@
                                         <thead class="table-light">
                                             <tr>
                                                 <th>#</th>
-                                                <th>Member Name</th>
-                                                <th>Member Of Family</th>
-                                                <th>P.A.N No</th>
-                                                <th>GST No</th>
-                                                <th>Aadhaar No</th>
-                                                <th>Gender</th>
-                                                <th>Operator</th>
+                                                <th>Operator Name</th>
+                                                <th>Mobile</th>
+                                                <th>Email</th>
+                                                <th>Cdate Of Creation</th>
                                                 <th>Actions</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <th scope="row">1</th>
+                                                <td class="">1</td>
                                                 <td class="">Rahul Gupta</td>
-                                                <td class="text-uppercase">Brothers</td>
-                                                <td class="text-uppercase">ABCDE1234F</td>
-                                                <td class="text-uppercase">29ABCDE1234F2z5</td>
-                                                <td class="text-uppercase">999999990019</td>
-                                                <td class="text-uppercase">Male</td>
-                                                <td class="">
-                                                    <div class="input-group tbl_int_grp">
-                                                        <select class="form-select select2">
-                                                            <option>-- Select Operator --</option>
-                                                            <option>Assigned Operator 1</option>
-                                                            <option>Assigned Operator 2</option>
-                                                            <option>Assigned Operator 3</option>
-                                                        </select>
-                                                        <a href="#operator_add" class="btn btn-outline-primary" data-bs-toggle="modal">
-                                                            <i class="la la-plus"></i>
-                                                        </a>
-                                                    </div>
-                                                </td>
+                                                <td class="">1234567890</td>
+                                                <td class="whitespace_nowrap">rahulgupta@gmail.com</td>
+                                                <td class="whitespace_nowrap">15-5-2021</td>
                                                 <td class="whitespace_nowrap">
                                                     <ul class="list-inline mb-0">
                                                         <li class="list-inline-item">
@@ -308,26 +290,11 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <th scope="row">2</th>
+                                                <td class="">2</td>
                                                 <td class="">Rahul Gupta</td>
-                                                <td class="text-uppercase">Brothers</td>
-                                                <td class="text-uppercase">ABCDE1234F</td>
-                                                <td class="text-uppercase">29ABCDE1234F2z5</td>
-                                                <td class="text-uppercase">999999990019</td>
-                                                <td class="text-uppercase">Male</td>
-                                                <td class="">
-                                                    <div class="input-group tbl_int_grp">
-                                                        <select class="form-select select2">
-                                                            <option>-- Select Operator --</option>
-                                                            <option>Assigned Operator 1</option>
-                                                            <option>Assigned Operator 2</option>
-                                                            <option>Assigned Operator 3</option>
-                                                        </select>
-                                                        <a href="#operator_add" class="btn btn-outline-primary" data-bs-toggle="modal">
-                                                            <i class="la la-plus"></i>
-                                                        </a>
-                                                    </div>
-                                                </td>
+                                                <td class="">1234567890</td>
+                                                <td class="whitespace_nowrap">rahulgupta@gmail.com</td>
+                                                <td class="whitespace_nowrap">15-5-2021</td>
                                                 <td class="whitespace_nowrap">
                                                     <ul class="list-inline mb-0">
                                                         <li class="list-inline-item">
@@ -427,40 +394,20 @@
                     <div class="modal-body">
                         <div class="row form_2 view_mode">
                             <div class="col-sm-12 col-md-6 mb-3 d-flex">
-                                <label class="mb-0">Member Name:</label>
+                                <label class="mb-0">Operator Name:</label>
                                 <span class="form-control">Rahul Gupta</span>
                             </div>
                             <div class="col-sm-12 col-md-6 mb-3 d-flex">
-                                <label class="mb-0">Member Of Family:</label>
-                                <span class="form-control">Brothers</span>
+                                <label class="mb-0">Mobile:</label>
+                                <span class="form-control">1234567890</span>
                             </div>
                             <div class="col-sm-12 col-md-6 mb-3 d-flex">
-                                <label class="mb-0">Address Line 1:</label>
-                                <span class="form-control">Akshya Nagar 1st Block</span>
+                                <label class="mb-0">Email:</label>
+                                <span class="form-control">rahulgupta@gmail.com</span>
                             </div>
                             <div class="col-sm-12 col-md-6 mb-3 d-flex">
-                                <label class="mb-0">Address Line 2:</label>
-                                <span class="form-control">1st Cross, Rammurthy nagar,</span>
-                            </div>
-                            <div class="col-sm-12 col-md-6 mb-3 d-flex">
-                                <label class="mb-0">Address Line 3:</label>
-                                <span class="form-control">Bangalore-560016</span>
-                            </div>
-                            <div class="col-sm-12 col-md-6 mb-3 d-flex">
-                                <label class="mb-0">P.A.N:</label>
-                                <span class="form-control">ABCDE1234F</span>
-                            </div>
-                            <div class="col-sm-12 col-md-6 mb-3 d-flex">
-                                <label class="mb-0">GST No.:</label>
-                                <span class="form-control">29ABCDE1234F2z5</span>
-                            </div>
-                            <div class="col-sm-12 col-md-6 mb-3 d-flex">
-                                <label class="mb-0">Aadhaar No:</label>
-                                <span class="form-control">999999990019</span>
-                            </div>
-                            <div class="col-sm-12 col-md-6 mb-3 d-flex">
-                                <label class="mb-0">Gender:</label>
-                                <span class="form-control">Male</span>
+                                <label class="mb-0">Date of Creation:</label>
+                                <span class="form-control">15-05-2021</span>
                             </div>
                         </div>
                     </div>
@@ -474,66 +421,6 @@
 
         <!-- Modal 2 -->
         <div class="modal fade" id="modal_add" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="staticBackdropLabel">Add Member Master</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="row form_2">
-                            <div class="col-sm-12 col-md-6 mb-3 d-flex">
-                                <label class="mb-0">Member Name <span class="text-danger">*</span>:</label>
-                                <input type="text" id="member_name" name="member_name" class="form-control" placeholder="Enter Member Name" />
-                            </div>
-                            <div class="col-sm-12 col-md-6 mb-3 d-flex">
-                                <label class="mb-0">Member Of Family <span class="text-danger">*</span>:</label>
-                                <input type="text" id="member_of_family" name="member_of_family" class="form-control" placeholder="Enter Member of Family" />
-                            </div>
-                            <div class="col-sm-12 col-md-6 mb-3 d-flex">
-                                <label class="mb-0">Address Line 1:</label>
-                                <input type="text" id="addressLine_1" name="addressLine_1" class="form-control" placeholder="Enter Address Line 1" />
-                            </div>
-                            <div class="col-sm-12 col-md-6 mb-3 d-flex">
-                                <label class="mb-0">Address Line 2:</label>
-                                <input type="text" id="addressLine_2" name="addressLine_2" class="form-control" placeholder="Enter Address Line 2" />
-                            </div>
-                            <div class="col-sm-12 col-md-6 mb-3 d-flex">
-                                <label class="mb-0">Address Line 3:</label>
-                                <input type="text" id="addressLine_3" name="addressLine_3" class="form-control" placeholder="Enter Address Line 3" />
-                            </div>
-                            <div class="col-sm-12 col-md-6 mb-3 d-flex">
-                                <label class="mb-0">P.A.N:</label>
-                                <input type="text" id="pan_no" name="pan_no" class="form-control" placeholder="Enter P.A.N" />
-                            </div>
-                            <div class="col-sm-12 col-md-6 mb-3 d-flex">
-                                <label class="mb-0">GST No.:</label>
-                                <input type="text" id="gst_no" name="gst_no" class="form-control" placeholder="Enter GST No" />
-                            </div>
-                            <div class="col-sm-12 col-md-6 mb-3 d-flex">
-                                <label class="mb-0">Aadhaar No.:</label>
-                                <input type="text" id="aadhaar_no" name="aadhaar_no" class="form-control" placeholder="Enter Aadhaar No" />
-                            </div>
-                            <div class="col-sm-12 col-md-6 mb-3 d-flex">
-                                <label class="mb-0">Gender:</label>
-                                <select type="text" id="gst_no" name="gst_no" class="form-select">
-                                    <option>Select Gender</option>
-                                    <option>Male</option>
-                                    <option>Female</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal-footer justify-content-center">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Reset</button>
-                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Save</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Modal 3 -->
-        <div class="modal fade" id="operator_add" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
                 <div class="modal-content">
                     <div class="modal-header">

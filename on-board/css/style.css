@@ -934,78 +934,80 @@ ul.checkout-bar li.visited:after {
 .script_list table tr td{
 	vertical-align: middle;
 }
-
-
   
-  @media (max-width: 1500px) {
-	.wrapper {
-	  height: auto;
-	}
-  }
-  
-  @media (max-width: 1199px) {
-	.wrapper {
-	  height: 100vh;
-	}
-	#wizard {
-	  margin-right: 40px;
-	  min-height: 829px;
-	  padding-left: 60px;
-	  padding-right: 60px;
-	}
-  }
-  
-  @media (max-width: 991px) {
-	.wrapper {
-	  justify-content: center;
-	}
-	/* .wrapper .image-holder {
-	  display: none;
-	} */
-	.wrapper form {
-	  width: 60%;
-	}
-	#wizard {
-	  margin-right: 0;
-	  padding-left: 40px;
-	  padding-right: 40px;
-	}
-  }
-  
-  @media (max-width: 767px) {
-	/* .wrapper {
-	  height: auto;
-	  display: block;
-	} */
-	/* .wrapper .image-holder {
-	  width: 100%;
-	  display: block;
-	} */
-	.wrapper form {
-	  width: 100%;
-	}
-	#wizard {
-	  min-height: unset;
-	  padding: 70px 20px 40px;
-	}
-	.form-row.form-group {
-	  display: block;
-	}
-	.form-row.form-group .form-holder {
-	  width: 100%;
-	  margin-right: 0;
-	  margin-bottom: 24px;
-	}
-	.item .purchase {
-	  margin-left: 11px;
-	}
 
-	.wrapper form{
-		padding: 20px 10px;
-	}
+/* ==========================================
+	Media Query
+========================================== */
+@media (max-width: 1500px) {
+.wrapper {
+	height: auto;
+}
+}
 
-	.btn-group-toggle .btn{
-		padding: .375rem .45rem;
-		font-size: .9rem;
-	}
-  }
+@media (max-width: 1199px) {
+.wrapper {
+	height: 100vh;
+}
+#wizard {
+	margin-right: 40px;
+	min-height: 829px;
+	padding-left: 60px;
+	padding-right: 60px;
+}
+}
+
+@media (max-width: 991px) {
+.wrapper {
+	justify-content: center;
+}
+/* .wrapper .image-holder {
+	display: none;
+} */
+.wrapper form {
+	width: 60%;
+}
+#wizard {
+	margin-right: 0;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+}
+
+@media (max-width: 767px) {
+/* .wrapper {
+	height: auto;
+	display: block;
+} */
+/* .wrapper .image-holder {
+	width: 100%;
+	display: block;
+} */
+.wrapper form {
+	width: 100%;
+}
+#wizard {
+	min-height: unset;
+	padding: 70px 20px 40px;
+}
+.form-row.form-group {
+	display: block;
+}
+.form-row.form-group .form-holder {
+	width: 100%;
+	margin-right: 0;
+	margin-bottom: 24px;
+}
+.item .purchase {
+	margin-left: 11px;
+}
+
+.wrapper form{
+	padding: 20px 10px;
+}
+
+.btn-group-toggle .btn{
+	padding: .375rem .45rem;
+	font-size: .9rem;
+}
+}

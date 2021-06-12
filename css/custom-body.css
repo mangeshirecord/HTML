@@ -601,6 +601,27 @@ small{font-size: 81%;}
     margin-right: 7px;
 }
 
+.input-daterange > div{
+    border: 1px solid #ced4da;
+}
+.input-daterange > div:first-child{
+    border-radius: 3px 0 0 3px;
+    margin-right: -1px;
+}
+.input-daterange > div:last-child{border-radius: 0 3px 3px 0;}
+
+.input-daterange .form-control{
+    border: none;
+}
+
+.input-daterange i{
+    color: #d4d9de;
+    font-size: 27px;
+    /* position: absolute;
+    right: 5px;
+    top: 7px;
+    z-index: 1; */
+}
 
 
 /* =============================================

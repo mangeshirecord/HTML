@@ -220,6 +220,10 @@
                                     <div class="card-body">
                                         <div class="row form_2">
                                             <div class="col-sm-12 col-md-6 mb-3 d-flex">
+                                                <label class="mb-0">Date:</label>
+                                                <input type="text" class="form-control datepicker" data-date-format="dd-mm-yyyy" placeholder="DD-MM-YYYY" />
+                                            </div>
+                                            <div class="col-sm-12 col-md-6 mb-3 d-flex">
                                                 <label class="mb-0">Investment Type:</label>
                                                 <select class="form-select select2-hide_search">
                                                     <option>-- Select Investment Type --</option>
@@ -232,7 +236,17 @@
                                             </div>
                                             <div class="col-sm-12 col-md-6 mb-3 d-flex">
                                                 <label class="mb-0">Broker:</label>
-                                                <input type="text" id="first_name" name="first_name" class="form-control" placeholder="Enter Default Broker Drop Down & Add" />
+                                                <div class="input-group tbl_int_grp">
+                                                    <select class="form-select select2">
+                                                        <option>-- Select Broker --</option>
+                                                        <option>Broker 1</option>
+                                                        <option>Broker 2</option>
+                                                        <option>Broker 3</option>
+                                                    </select>
+                                                    <a style="min-width: 80px;" href="#modal_broker" class="btn btn-outline-primary" data-bs-toggle="modal">
+                                                        <i class="la la-plus"></i> Add
+                                                    </a>
+                                                </div>
                                             </div>
                                             <div class="col-sm-12 col-md-6 mb-3 d-flex">
                                                 <label class="mb-0">Demat:</label>
@@ -243,7 +257,7 @@
                                                         <option>Demat 2</option>
                                                         <option>Demat 3</option>
                                                     </select>
-                                                    <a href="#modal_add" class="btn btn-outline-primary" data-bs-toggle="modal">
+                                                    <a style="min-width: 80px;" href="#modal_add" class="btn btn-outline-primary" data-bs-toggle="modal">
                                                         <i class="la la-plus"></i> Add
                                                     </a>
                                                 </div>
@@ -255,14 +269,6 @@
                                             <div class="col-sm-12 col-md-6 mb-3 d-flex">
                                                 <label class="mb-0">Password:</label>
                                                 <input type="password" id="password" name="password" class="form-control" placeholder="Enter Password" />
-                                            </div>
-                                            <div class="col-sm-12 col-md-6 mb-3 d-flex">
-                                                <label class="mb-0">From Date:</label>
-                                                <input type="text" class="form-control datepicker" data-date-format="dd-mm-yyyy" placeholder="DD-MM-YYYY" />
-                                            </div>
-                                            <div class="col-sm-12 col-md-6 mb-3 d-flex">
-                                                <label class="mb-0">To Date:</label>
-                                                <input type="text" class="form-control datepicker" data-date-format="dd-mm-yyyy" placeholder="DD-MM-YYYY" />
                                             </div>
                                             <div class="col-sm-12 text-center mt-3">
                                                 <button type="button" class="btn btn-secondary">Reset</button>
@@ -316,6 +322,29 @@
                             <div class="col-sm-12 col-md-6 mb-3 d-flex">
                                 <label class="mb-0">Demat <span class="text-danger">*</span>:</label>
                                 <input type="text" id="family_name" name="family_name" class="form-control" placeholder="Enter Demat A/c Name" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer justify-content-center">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Save</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Reset</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal 2 -->
+        <div class="modal fade" id="modal_broker" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Add Broker</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row form_2">
+                            <div class="col-sm-12 col-md-6 mb-3 d-flex">
+                                <label class="mb-0">Broker <span class="text-danger">*</span>:</label>
+                                <input type="text" id="family_name" name="family_name" class="form-control" placeholder="Enter Broker Name" />
                             </div>
                         </div>
                     </div>

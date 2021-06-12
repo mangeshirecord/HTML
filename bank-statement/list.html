@@ -225,7 +225,7 @@
                                     <div class="row">
                                         <div class="col-sm-12 col-md-4 mb-3 d-flex flex-column justify-content-end">
                                             <label class="mb-0">Datewise Bill:</label>
-                                            <input type="text" class="form-control datepicker" placeholder="DD-MM-YYYY" data-date-format="dd-mm-yyyy">
+                                            <input type="text" class="form-control datepicker" placeholder="YYYY" data-date-format="yyyy">
                                         </div>
 
                                         <div class="col-sm-12 col-md-2 mb-3 align-self-end">
@@ -413,9 +413,13 @@
     <script>
         $(document).ready(function() {
             $('.datepicker').datepicker({
-                format: "dd-mm-yyyy",
+                // format: "dd-mm-yyyy",
                 autoclose: true,
-                todayHighlight: true
+                todayHighlight: true,
+                format: "yyyy",
+                viewMode: "years",
+                minViewMode: "years",
+                orientation: "bottom auto"
             });
         });
     </script>
