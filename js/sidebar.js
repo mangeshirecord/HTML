@@ -25,6 +25,7 @@ document.write('<ul class="metismenu list-unstyled" id="side-menu">');
             document.write('<li class="submenu_9"><a href="'+header_url+'account-master.html">Account Master</a></li>');
             document.write('<li class="submenu_10"><a href="'+header_url+'entry-trade/list.html">Broker Bill</a></li>');
             document.write('<li class="submenu_11"><a href="'+header_url+'bank-statement/list.html">Bank Statement</a></li>');
+            document.write('<li class="submenu_12"><a href="'+header_url+'operator-master.html">Operator Master</a></li>');
         document.write('</ul>');
     document.write('</li>');
     document.write('<li class="topmenu_3">');
