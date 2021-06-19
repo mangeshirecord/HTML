@@ -48,3 +48,35 @@ function setreportsmenu(reports_list) {
         }
     }
 }
+
+function setcorporatesmenu(coraction_list) {
+    var coraction = $(".sub-menu li").length;
+    for (i = 1; i <= coraction; i++) {
+        if (eval(i) == coraction_list) 
+    {
+      if(document.getElementsByClassName("coraction_" + i))
+            $(".coraction_" + i).addClass("mm-active");
+        }
+    else 
+    {
+      if(document.getElementsByClassName("coraction_" + i))
+            $(".coraction_" + i).removeClass("mm-active");
+        }
+    }
+}
+
+function setentrymenu(entry_list) {
+    var entry = $(".sub-menu li").length;
+    for (i = 1; i <= entry; i++) {
+        if (eval(i) == entry_list) 
+    {
+      if(document.getElementsByClassName("entry_" + i))
+            $(".entry_" + i).addClass("mm-active");
+        }
+    else 
+    {
+      if(document.getElementsByClassName("entry_" + i))
+            $(".entry_" + i).removeClass("mm-active");
+        }
+    }
+}
