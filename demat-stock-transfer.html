@@ -244,8 +244,23 @@
                                             <label class="form-check-label" for="check_1"></label>
                                         </div>
                                     </div>
+
                                     <div class="col-sm-12 col-md-4 mb-3 d-flex flex-column">
-                                        <label class="mb-0">Demat Account:</label>
+                                        <label class="mb-0">From Demat Account:</label>
+                                        <div class="input-group tbl_int_grp">
+                                            <select class="form-select select2">
+                                                <option>-- Select Demat --</option>
+                                                <option>Demat 1</option>
+                                                <option>Demat 2</option>
+                                                <option>Demat 3</option>
+                                            </select>
+                                            <a style="min-width: 80px;" href="#modal_add" class="btn btn-outline-primary" data-bs-toggle="modal">
+                                                <i class="la la-plus"></i> Add
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-md-4 mb-3 d-flex flex-column">
+                                        <label class="mb-0">To Demat Account:</label>
                                         <div class="input-group tbl_int_grp">
                                             <select class="form-select select2">
                                                 <option>-- Select Demat --</option>
@@ -318,22 +333,24 @@
                                     </table>
                                 </div>
 
-                                <div class="col-sm-12 text-center mt-3">
-                                    <input type="submit" class="btn btn-primary" value="Transfer" />
-                                </div>
-
-                                <div class="row justify-content-end">
+                                <div class="row justify-content-end mt-3">
                                     <div class="col-sm-12 col-md-4">
-                                        <div class="table-responsive">
+                                        <div class="table-responsive table-small">
                                             <table class="table table-bordered mb-0">
-                                                <th>Total Charges</th>
+                                                <th class="whitespace_nowrap">Total Charges</th>
                                                 <td class="text-end">
-                                                    <span class="currency_sign">25,000.00</span>
+                                                    <input type="text" class="form-control text-end" placeholder="Enter Amount" />
                                                 </td>
                                             </table>
                                         </div>
                                     </div>
                                 </div>
+
+                                <div class="col-sm-12 text-center mt-3">
+                                    <input type="submit" class="btn btn-primary" value="Transfer" />
+                                </div>
+
+                               
 
                             </div>
                         </div>
