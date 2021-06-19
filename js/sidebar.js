@@ -64,7 +64,7 @@ document.write('<ul class="metismenu list-unstyled" id="side-menu">');
             document.write('<span>Entry</span>');
         document.write('</a>');
         document.write('<ul class="sub-menu" aria-expanded="false">');
-            document.write('<li class="entry_1"><a href="'+header_url+'reports/jv-entry.html">JV Entry</a></li>');
+            document.write('<li class="entry_1"><a href="'+header_url+'/jv-entry.html">JV Entry</a></li>');
         document.write('</ul>');
     document.write('</li>');
 document.write('</ul>');
