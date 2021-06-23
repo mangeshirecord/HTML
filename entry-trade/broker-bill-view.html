@@ -7,11 +7,12 @@
 
 	<link rel="stylesheet" href="../css/bootstrap.min.v4.css" />
 	<link rel="stylesheet" href="../css/line-awesome.min.css" />
+    <link rel="stylesheet" href="../css/bootstrap-datepicker3.min.css" />
 	<link rel="stylesheet" href="../css/theme-color.css" />
 	<link rel="stylesheet" href="../css/app.min.css" />
 	<link rel="stylesheet" href="../css/custom-body.css" />
 
-	<title>Broker Bill :: iRecord</title>
+	<title>Cash Segment Broker Bill :: iRecord</title>
 </head>
 <body class="inner_body">
 	<form id="" class="" method="POST" action="">
@@ -202,7 +203,7 @@
                         <div class="row">
                             <div class="col-12">
                                 <div class="page-title-box d-flex align-items-center justify-content-between">
-                                    <h4 class="mb-0">Broker Bill</h4>
+                                    <h4 class="mb-0">Cash Segment Broker Bill</h4>
 
                                     <div class="page-title-right">
                                         <a href="list.html" class="px-2 btn btn-dark"><i class="las la-angle-left font-size-18"></i> Back to Index</a>
@@ -218,16 +219,19 @@
                         <div class="card">
                             <div class="card-body">
 
-                                <div class="row form_2 view_mode">
-                                    <div class="col-sm-12 col-md-6 mb-3 d-flex">
+                                <div class="row">
+                                    <!-- <div class="col-sm-12 col-md-6 mb-3 d-flex">
                                         <label class="mb-0">Member Name:</label>
                                         <span class="form-control">Deepak Pratap Thakker</span>
-                                    </div>
-                                    <div class="col-sm-12 col-md-6 mb-3 d-flex">
+                                    </div> -->
+                                    <div class="col-sm-12 col-md-3 mb-3 d-flex flex-column">
                                         <label class="mb-0">Date:</label>
-                                        <span class="form-control">21-04-2021</span>
+                                        <div class="input-daterange input-group" id="datepicker6" data-date-format="yyyy" data-date-autoclose="true" data-provide="datepicker" data-date-container='#datepicker6'>
+                                            <input type="text" class="form-control" name="start" placeholder="Start Date">
+                                            <input type="text" class="form-control" name="end" placeholder="End Date">
+                                        </div>
                                     </div>
-                                    <div class="col-sm-12 col-md-6 mb-3 d-flex">
+                                    <!-- <div class="col-sm-12 col-md-6 mb-3 d-flex">
                                         <label class="mb-0">Settlement No:</label>
                                         <span class="form-control">--</span>
                                     </div>
@@ -238,11 +242,7 @@
                                     <div class="col-sm-12 col-md-6 mb-3 d-flex">
                                         <label class="mb-0">Broker:</label>
                                         <span class="form-control">--</span>
-                                    </div>
-                                    <div class="col-sm-12 col-md-6 mb-3 d-flex">
-                                        <label class="mb-0">Demat:</label>
-                                        <span class="form-control">Deepak Pratap A/C</span>
-                                    </div>
+                                    </div> -->
                                    
                                 </div>
 
@@ -254,7 +254,31 @@
                                                     <div class="drag_div">
                                                         <svg width="16px" height="6px" viewBox="0 0 16 6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <title>drag_handle</title> <desc>Created with Sketch.</desc> <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Rounded" transform="translate(-308.000000, -2023.000000)"> <g id="Editor" transform="translate(100.000000, 1960.000000)"> <g id="-Round-/-Editor-/-drag_handle" transform="translate(204.000000, 54.000000)"> <g> <polygon id="Path" points="0 0 24 0 24 24 0 24"></polygon> <path d="M19,9 L5,9 C4.45,9 4,9.45 4,10 C4,10.55 4.45,11 5,11 L19,11 C19.55,11 20,10.55 20,10 C20,9.45 19.55,9 19,9 Z M5,15 L19,15 C19.55,15 20,14.55 20,14 C20,13.45 19.55,13 19,13 L5,13 C4.45,13 4,13.45 4,14 C4,14.55 4.45,15 5,15 Z" class="svg_icon"></path> </g> </g> </g> </g> </g></svg>
                                                     </div>
-                                                    <span class="top_padding">Delete Record</span>
+                                                    <span class="top_padding">Delete</span>
+                                                </th>
+                                                <th>
+                                                    <div class="drag_div">
+                                                        <svg width="16px" height="6px" viewBox="0 0 16 6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <title>drag_handle</title> <desc>Created with Sketch.</desc> <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Rounded" transform="translate(-308.000000, -2023.000000)"> <g id="Editor" transform="translate(100.000000, 1960.000000)"> <g id="-Round-/-Editor-/-drag_handle" transform="translate(204.000000, 54.000000)"> <g> <polygon id="Path" points="0 0 24 0 24 24 0 24"></polygon> <path d="M19,9 L5,9 C4.45,9 4,9.45 4,10 C4,10.55 4.45,11 5,11 L19,11 C19.55,11 20,10.55 20,10 C20,9.45 19.55,9 19,9 Z M5,15 L19,15 C19.55,15 20,14.55 20,14 C20,13.45 19.55,13 19,13 L5,13 C4.45,13 4,13.45 4,14 C4,14.55 4.45,15 5,15 Z" class="svg_icon"></path> </g> </g> </g> </g> </g></svg>
+                                                    </div>
+                                                    <span class="top_padding">Date</span>
+                                                </th>
+                                                <th>
+                                                    <div class="drag_div">
+                                                        <svg width="16px" height="6px" viewBox="0 0 16 6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <title>drag_handle</title> <desc>Created with Sketch.</desc> <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Rounded" transform="translate(-308.000000, -2023.000000)"> <g id="Editor" transform="translate(100.000000, 1960.000000)"> <g id="-Round-/-Editor-/-drag_handle" transform="translate(204.000000, 54.000000)"> <g> <polygon id="Path" points="0 0 24 0 24 24 0 24"></polygon> <path d="M19,9 L5,9 C4.45,9 4,9.45 4,10 C4,10.55 4.45,11 5,11 L19,11 C19.55,11 20,10.55 20,10 C20,9.45 19.55,9 19,9 Z M5,15 L19,15 C19.55,15 20,14.55 20,14 C20,13.45 19.55,13 19,13 L5,13 C4.45,13 4,13.45 4,14 C4,14.55 4.45,15 5,15 Z" class="svg_icon"></path> </g> </g> </g> </g> </g></svg>
+                                                    </div>
+                                                    <span class="top_padding">Member Name</span>
+                                                </th>
+                                                <th>
+                                                    <div class="drag_div">
+                                                        <svg width="16px" height="6px" viewBox="0 0 16 6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <title>drag_handle</title> <desc>Created with Sketch.</desc> <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Rounded" transform="translate(-308.000000, -2023.000000)"> <g id="Editor" transform="translate(100.000000, 1960.000000)"> <g id="-Round-/-Editor-/-drag_handle" transform="translate(204.000000, 54.000000)"> <g> <polygon id="Path" points="0 0 24 0 24 24 0 24"></polygon> <path d="M19,9 L5,9 C4.45,9 4,9.45 4,10 C4,10.55 4.45,11 5,11 L19,11 C19.55,11 20,10.55 20,10 C20,9.45 19.55,9 19,9 Z M5,15 L19,15 C19.55,15 20,14.55 20,14 C20,13.45 19.55,13 19,13 L5,13 C4.45,13 4,13.45 4,14 C4,14.55 4.45,15 5,15 Z" class="svg_icon"></path> </g> </g> </g> </g> </g></svg>
+                                                    </div>
+                                                    <span class="top_padding">Settlement No</span>
+                                                </th>
+                                                <th>
+                                                    <div class="drag_div">
+                                                        <svg width="16px" height="6px" viewBox="0 0 16 6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <title>drag_handle</title> <desc>Created with Sketch.</desc> <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Rounded" transform="translate(-308.000000, -2023.000000)"> <g id="Editor" transform="translate(100.000000, 1960.000000)"> <g id="-Round-/-Editor-/-drag_handle" transform="translate(204.000000, 54.000000)"> <g> <polygon id="Path" points="0 0 24 0 24 24 0 24"></polygon> <path d="M19,9 L5,9 C4.45,9 4,9.45 4,10 C4,10.55 4.45,11 5,11 L19,11 C19.55,11 20,10.55 20,10 C20,9.45 19.55,9 19,9 Z M5,15 L19,15 C19.55,15 20,14.55 20,14 C20,13.45 19.55,13 19,13 L5,13 C4.45,13 4,13.45 4,14 C4,14.55 4.45,15 5,15 Z" class="svg_icon"></path> </g> </g> </g> </g> </g></svg>
+                                                    </div>
+                                                    <span class="top_padding">Bill No</span>
                                                 </th>
                                                 <th>
                                                     <div class="drag_div">
@@ -870,11 +894,27 @@
 	<script src="../js/simplebar.min.js"></script>
 	<script src="../js/app.js"></script>
 
+    <script src="../js/bootstrap-datepicker.min.js"></script>
     <script src="../js/jquery.dragtable.js"></script>
     <script>
         $(document).ready(function() {
             $('.defaultTable').dragtable({
                 dragHandle:'.drag_div'
+            });
+
+            $('.datepicker').datepicker({
+                format: "dd-mm-yyyy",
+                autoclose: true,
+                todayHighlight: true
+            });
+            $('#datepicker6').datepicker({
+                // startDate: new Date(),
+                // startDate: '+1y',
+                startView: "year",
+                endDate:new Date(),
+                datesDisabled: '+1y',
+                viewMode: "years",
+                minViewMode: "years"
             });
         });
     </script>

@@ -58,6 +58,11 @@ h1, h1, h3, h4, h5, h6{
     margin-right: 3px;
 }
 
+.datepicker table tr td span.disabled {
+    color: #adb5bd;
+    opacity: .6;
+}
+
 /* =============================================
     Page Topbar
 ============================================= */
@@ -623,7 +628,7 @@ small{font-size: 81%;}
 }
 .input-daterange > div:last-child{border-radius: 0 3px 3px 0;}
 
-.input-daterange .form-control{
+.input-daterange.icon_dt_picker .form-control{
     border: none;
 }
 
@@ -665,6 +670,10 @@ small{font-size: 81%;}
         margin-right: 0;
     }
     .desktop_adds{display: none;}
+
+    .table_min_width{
+        min-width: 300px;
+    }
 
 }
 
