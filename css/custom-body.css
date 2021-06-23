@@ -671,12 +671,8 @@ small{font-size: 81%;}
     }
     .desktop_adds{display: none;}
 
-    .table_min_width{
-        min-width: 300px;
-    }
-    .table_min_drcr{
-        min-width: 150px;
-    }
+    .table_min_width{min-width: 300px; width: 300px;}
+    .table_min_drcr{min-width: 150px; width: 150px;}
 
 }
 
