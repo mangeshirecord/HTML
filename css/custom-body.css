@@ -674,6 +674,9 @@ small{font-size: 81%;}
     .table_min_width{
         min-width: 300px;
     }
+    .table_min_drcr{
+        min-width: 150px;
+    }
 
 }
 
