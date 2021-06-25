@@ -504,6 +504,7 @@ small{font-size: 81%;}
     align-items: center;
 }
 
+.form-check .form-check-input,
 .user_rights_par .form-check .form-check-input{
     width: 18px;
     height: 18px;
@@ -670,6 +671,22 @@ small{font-size: 81%;}
     font-family: var(--font_w_6);
 }
 
+.charges_box .input-group {
+    width: 100%;
+    max-width: 150px;
+    margin: 0 7px;
+}
+
+.expense_view h4{font-size: 18px;}
+
+.expense_view .row > *{margin-bottom: 25px;}
+.expense_view .row > div:last-child{margin-bottom: 0;}
+
+.expense_view .row > div span.span_label{
+    width: 100%;
+    max-width: 160px;
+}
+
 
 .input-daterange > div{
     border: 1px solid #ced4da;
@@ -691,6 +708,11 @@ small{font-size: 81%;}
     right: 5px;
     top: 7px;
     z-index: 1; */
+}
+
+.dropdown-menu.dropdown-menu-right{
+    left: inherit !important;
+    right: 0 !important;
 }
 
 
