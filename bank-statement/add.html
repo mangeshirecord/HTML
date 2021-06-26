@@ -229,16 +229,19 @@
                                                 </select>
                                             </div>
                                             <div class="col-sm-12 col-md-6 mb-3 d-flex">
-                                                <label class="mb-0">From Date:</label>
-                                                <input type="text" class="form-control datepicker" data-date-format="dd-mm-yyyy" placeholder="DD-MM-YYYY" />
+                                                <label class="mb-0">F.Y. Year:</label>
+                                                <div class="input-daterange date_range input-group" data-date-format="dd M, yyyy" data-date-autoclose="true" data-provide="datepicker" data-date-container='.date_range'>
+                                                    <input type="text" class="form-control" name="start" placeholder="Start Date">
+                                                    <input type="text" class="form-control" name="end" placeholder="End Date">
+                                                </div>
                                             </div>
-                                            <div class="col-sm-12 col-md-6 mb-3 d-flex">
+                                            <!-- <div class="col-sm-12 col-md-6 mb-3 d-flex">
                                                 <label class="mb-0">To Date:</label>
                                                 <input type="text" class="form-control datepicker" data-date-format="dd-mm-yyyy" placeholder="DD-MM-YYYY" />
-                                            </div>
+                                            </div> -->
                                             <div class="col-sm-12 col-md-6 mb-3 d-flex">
                                                 <label class="mb-0">Browse:</label>
-                                                <input type="file"class="form-control" />
+                                                <input type="file" class="form-control" />
                                             </div>
                                             <div class="col-sm-12 col-md-6 mb-3 d-flex">
                                                 <label class="mb-0">Password:</label>

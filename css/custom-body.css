@@ -715,6 +715,12 @@ small{font-size: 81%;}
     right: 0 !important;
 }
 
+.bnk_st_list .col_2{width: 100%; min-width: 180px;}
+.bnk_st_list .col_3{width: 100%; min-width: 280px;}
+.bnk_st_list .col_4{width: 100%; min-width: 180px;}
+.bnk_st_list .col_5{width: 100%; min-width: 100px;}
+.bnk_st_list .col_6{width: 100%; min-width: 360px;}
+
 
 /* =============================================
     Responsive
