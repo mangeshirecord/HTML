@@ -136,9 +136,9 @@ header .desk_search{margin-right:auto;}
 }
 
 .form_2 .col-md-6 > label{
-	-ms-flex: 0 0 140px;
-	flex: 0 0 140px;
-	max-width: 140px;
+	-ms-flex: 0 0 160px;
+	flex: 0 0 160px;
+	max-width: 160px;
     margin-bottom: 0;
 }
 
