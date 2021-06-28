@@ -135,7 +135,7 @@ header .desk_search{margin-right:auto;}
     font-size: 18px!important;
 }
 
-.form_2 .col-md-6 > label{
+.form_2 [class*="col-"] > label{
 	-ms-flex: 0 0 160px;
 	flex: 0 0 160px;
 	max-width: 160px;
@@ -661,7 +661,11 @@ small{font-size: 81%;}
 }
 .jv_entry_box .col_4{
     width: 100%; 
-    max-width: 42%;
+    max-width: 37%;
+}
+.jv_entry_box .col_5{
+    width: 100%; 
+    max-width: 5%;
 }
 
 .desk_header{
@@ -738,6 +742,7 @@ small{font-size: 81%;}
     .jv_entry_box .col_4{max-width: 100%;}
     .jv_entry_box .col_2{max-width: 35%;}
     .jv_entry_box .col_3{max-width: 65%;}
+    .jv_entry_box .col_5{max-width: 100%;}
 }
 
 @media (min-width: 768px){

@@ -223,23 +223,51 @@
                         <div class="card">
                             <div class="card-body">
 
-                                <div class="row form_2 mb-3">
-                                    <div class="col-sm-12 col-md-6 mb-3 d-flex">
-                                        <label class="mb-0">JV No.:</label>
-                                        <input type="text" class="form-control" readonly="" />
+                                <div class="d-flex flex-column">
+                                    <div class="row mb-3">
+                                        <div class="col-sm-12 col-md-4 mb-3 d-flex flex-column">
+                                            <label class="mb-0">JV No.:</label>
+                                            <input type="text" class="form-control" readonly="" />
+                                        </div>
+
+                                        <div class="col-sm-12 col-md-4 mb-3 d-flex flex-column">
+                                            <label class="mb-0">Date:</label>
+                                            <input type="text" class="form-control datepicker" data-date-format="dd-mm-yyyy" placeholder="DD-MM-YYYY" />
+                                        </div>
                                     </div>
 
-                                    <div class="col-sm-12 col-md-6 mb-3 d-flex">
-                                        <label class="mb-0">Date:</label>
-                                        <input type="text" class="form-control datepicker" data-date-format="dd-mm-yyyy" placeholder="DD-MM-YYYY" />
-                                    </div>
-                                    
-                                    <div class="col text-center">
-                                        <input type="submit" class="btn btn-primary" value="GO">
+                                    <h5>Primary Ledger</h5>
+                                    <div class="row mb-3">
+                                        <div class="col-sm-12 col-md-5 mb-3 d-flex flex-column">
+                                            <label class="mb-0">Ledger:</label>
+                                            <select class="form-select w-100 select2">
+                                                <option>-- Select Ledger --</option>
+                                                <option>Ledger 1</option>
+                                                <option>Ledger 2</option>
+                                                <option>Ledger 3</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="col-sm-12 col-md-3 mb-3 d-flex flex-column">
+                                            <label class="mb-0">DR/CR:</label>
+                                            <select class="form-select w-100 select2-hide_search">
+                                                <option>DR</option>
+                                                <option>CR</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4 mb-3 d-flex flex-column">
+                                            <label class="mb-0">Amount:</label>
+                                            <input type="text" class="form-control" placeholder="Enter Amount" />
+                                        </div>
+                                        <div class="col-sm-12 col-md-5 mb-3 d-flex flex-column">
+                                            <label class="mb-0">Amount:</label>
+                                            <input type="text" class="form-control" placeholder="Enter Amount" />
+                                        </div>
                                     </div>
                                 </div>
 
                                 <div class="jv_entry_box">
+                                    <h5>Counter Ledger</h5>
                                     <ul class="sub_list">
                                         <li class="desk_header">
                                             <div class="col_1">Ledger</div>
@@ -268,52 +296,81 @@
                                             <div class="col_4">
                                                 <input type="text" class="form-control" placeholder="Enter Narraton" />
                                             </div>
-                                        </li>
-                                        <li class="d-flex flex-wrap">
-                                            <div class="col_1">
-                                                <select class="form-select w-100 select2">
-                                                    <option>-- Select Ledger --</option>
-                                                    <option>Ledger 1</option>
-                                                    <option>Ledger 2</option>
-                                                    <option>Ledger 3</option>
-                                                </select>
-                                            </div>
-                                            <div class="col_2">
-                                                <select class="form-select w-100 select2-hide_search">
-                                                    <option>DR</option>
-                                                    <option>CR</option>
-                                                </select>
-                                            </div>
-                                            <div class="col_3">
-                                                <input type="text" class="form-control" placeholder="Enter Amount" />
-                                            </div>
-                                            <div class="col_4">
-                                                <input type="text" class="form-control" placeholder="Enter Narraton" />
-                                            </div>
-                                        </li>
-                                        <li class="d-flex flex-wrap">
-                                            <div class="col_1">
-                                                <select class="form-select w-100 select2">
-                                                    <option>-- Select Ledger --</option>
-                                                    <option>Ledger 1</option>
-                                                    <option>Ledger 2</option>
-                                                    <option>Ledger 3</option>
-                                                </select>
-                                            </div>
-                                            <div class="col_2">
-                                                <select class="form-select w-100 select2-hide_search">
-                                                    <option>DR</option>
-                                                    <option>CR</option>
-                                                </select>
-                                            </div>
-                                            <div class="col_3">
-                                                <input type="text" class="form-control" placeholder="Enter Amount" />
-                                            </div>
-                                            <div class="col_4">
-                                                <input type="text" class="form-control" placeholder="Enter Narraton" />
+                                            <div class="col_5 justify-content-end text-end">
+                                                <a href="javascript:;" class="btn btn-primary whitespace_nowrap" data-bs-toggle="modal">
+                                                    <i class="la la-plus"></i> Add
+                                                </a>
                                             </div>
                                         </li>
                                     </ul>
+                                </div>
+
+                                <div class="table-responsive mt-5">
+                                    <table class="table table-hover table-bordered mb-0">
+                                        <thead class="table-light">
+                                            <tr>
+                                                <th width="5%">#</th>
+                                                <th width="30%">Ledger</th>
+                                                <th width="10%">DR/CR</th>
+                                                <th width="15%">Amount</th>
+                                                <th width="30%">Narraton</th>
+                                                <th width="10%">Actions</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Ledger 1</td>
+                                                <td>CR</td>
+                                                <td>10000.00</td>
+                                                <td>XYZ Narraton</td>
+                                                <td class="whitespace_nowrap">
+                                                    <ul class="list-inline mb-0">
+                                                        <li class="list-inline-item">
+                                                            <a href="javascript:;" class="px-2 btn btn-outline-primary"><i class="las la-pencil-alt font-size-18"></i></a>
+                                                        </li>
+                                                        <li class="list-inline-item">
+                                                            <a href="javascript:void(0);" onclick="myFunction()" class="px-2 btn btn-outline-danger"><i class="las la-trash-alt font-size-18"></i></a>
+                                                        </li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>Ledger 1</td>
+                                                <td>DR</td>
+                                                <td>5000.00</td>
+                                                <td>XYZ Narraton</td>
+                                                <td class="whitespace_nowrap">
+                                                    <ul class="list-inline mb-0">
+                                                        <li class="list-inline-item">
+                                                            <a href="javascript:;" class="px-2 btn btn-outline-primary"><i class="las la-pencil-alt font-size-18"></i></a>
+                                                        </li>
+                                                        <li class="list-inline-item">
+                                                            <a href="javascript:void(0);" onclick="myFunction()" class="px-2 btn btn-outline-danger"><i class="las la-trash-alt font-size-18"></i></a>
+                                                        </li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>Ledger 1</td>
+                                                <td>DR</td>
+                                                <td>5000.00</td>
+                                                <td>XYZ Narraton</td>
+                                                <td class="whitespace_nowrap">
+                                                    <ul class="list-inline mb-0">
+                                                        <li class="list-inline-item">
+                                                            <a href="javascript:;" class="px-2 btn btn-outline-primary"><i class="las la-pencil-alt font-size-18"></i></a>
+                                                        </li>
+                                                        <li class="list-inline-item">
+                                                            <a href="javascript:void(0);" onclick="myFunction()" class="px-2 btn btn-outline-danger"><i class="las la-trash-alt font-size-18"></i></a>
+                                                        </li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
 
                                 <div class="narration_box mt-4 mb-4">
