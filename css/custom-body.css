@@ -736,6 +736,26 @@ small{font-size: 81%;}
 .bnk_st_list .col_5{width: 100%; min-width: 100px;}
 .bnk_st_list .col_6{width: 100%; min-width: 360px;}
 
+.grey_box{
+    border: 1px solid #f5f6f8;
+    padding: 10px 10px 0 10px;
+    border-radius: 8px;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.grey_box:hover{
+    border-color: rgba(var(--bs-primary),1);
+}
+
+.from_to_box .form-control:first-child{border-radius: 4px 0 0 4px;}
+.from_to_box .form-control:last-child{border-radius: 0 4px 4px 0;}
+.from_to_box span{
+    background: #E9ECEF;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
 
 /* =============================================
     Responsive
