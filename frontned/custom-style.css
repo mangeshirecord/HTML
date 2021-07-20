@@ -1,0 +1,133 @@
+/* =====================================
+    Resize Box
+===================================== */
+
+/* #scaleable-wrapper {
+    padding: 20px;
+    resize: both;
+    position: relative;
+    height: 100%;
+    height: 1320px;
+  }
+
+#very-specific-design {
+    max-width: 1050px;
+    height: auto;
+    padding: 0;
+    text-align: center;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transform-origin: center center;
+} */
+
+.mt-5{margin-top: 5px;}
+
+.mainDiv {
+	position: relative;
+}
+
+.insideDiv {
+	position: absolute;
+	z-index:15;
+}
+
+.map_box{
+  position: absolute;
+  left: 0; right: 0; top: 0; bottom: 0;
+  text-align: center;
+}
+
+/* #canvas{
+
+} */
+
+#canvas img{
+  display: inline-block;
+  margin: 0 auto;
+  text-align: center;
+  /* width: auto;
+  max-width: 1050px; */
+}
+
+.tooltip.show{
+  opacity: 1;
+}
+
+/* =====================================
+    Markers
+===================================== */
+
+/* .map_box svg{max-width: 100%;} */
+
+.marker_points{
+}
+
+.marker_points ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.pulse_box {
+    background: #E59A21;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+    -webkit-appearance: none;
+    border: none;
+    display: inline-block !important;
+
+    transform: scale(1);
+  	animation: pulse-black 2s infinite;
+}
+
+
+@keyframes pulse-black {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(231,158,35, 0.7);
+	}
+	
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(231,158,35, 0);
+	}
+	
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(231,158,35, 0);
+	}
+}
+
+.w-100{width: 100%; display: inline-block;}
+
+.popover-title{
+  font-size: 16px !important;
+  margin-bottom: 0 !important;
+}
+
+.popover{
+  width: 100%;
+  max-width: 320px;
+}
+
+.cont_box{
+  color: #E79E23;
+  padding: 5px 0;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.cont_box i{
+  width: 20px;
+  margin-right: 5px;
+}
+
+.cont_box:hover,
+.cont_box:focus{
+  color: #000;
+}
