@@ -28,7 +28,8 @@
 	position: relative;
 }
 
-.insideDiv {
+.insideDiv ,
+.insideDiv_2 {
 	position: absolute;
 	z-index:15;
 }
@@ -43,7 +44,8 @@
 
 } */
 
-#canvas img{
+#canvas img,
+#canvas_uae img{
   display: inline-block;
   margin: 0 auto;
   text-align: center;
@@ -53,6 +55,35 @@
 
 .tooltip.show{
   opacity: 1;
+}
+
+.map_tab{
+  border: none;
+  margin-bottom: 25px;
+}
+
+.map_tab li a{
+  border: none;
+  background: #DFDFDF;
+  color: #000;
+  font-weight: 600;
+  min-width: 100px;
+  padding: 8px 5px;
+  line-height: normal;
+  text-align: center;
+  border-radius: 4px;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.map_tab li:not(:last-child) a{margin-right: 10px;}
+
+.map_tab.nav-tabs > li.active > a, 
+.map_tab.nav-tabs > li.active > a:focus, 
+.map_tab.nav-tabs > li.active > a:hover{
+  background: #E69D22;
+  color: #000;
+  border: none;
 }
 
 /* =====================================

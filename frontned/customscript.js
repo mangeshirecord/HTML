@@ -12,7 +12,7 @@ $(document).ready(function() {
     });
 
     var scree_width = $('#map_sidth').width();
-    console.log("SW " + scree_width);
+    // console.log("SW " + scree_width);
     // var scree_width = document.body.scrollWidth;  Full Screen Width
     var screen_height = window.innerHeight;
 
@@ -22,17 +22,17 @@ $(document).ready(function() {
     var target_width = scree_width;
     var target_height = scree_width * main_height / main_image_width;
 
-    console.log("screen resolution");
-    console.log(screen_height + " height");
-    console.log(scree_width + " width");
+    // console.log("screen resolution");
+    // console.log(screen_height + " height");
+    // console.log(scree_width + " width");
 
-    console.log("image");
-    console.log(main_height + " height");
-    console.log(main_image_width + " width");
+    // console.log("image");
+    // console.log(main_height + " height");
+    // console.log(main_image_width + " width");
 
-    console.log("image");
-    console.log(target_height + " height");
-    console.log(target_width + " width");
+    // console.log("image");
+    // console.log(target_height + " height");
+    // console.log(target_width + " width");
 
     canvas.width = target_width;
     canvas.height = target_height;
