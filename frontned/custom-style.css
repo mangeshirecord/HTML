@@ -86,6 +86,20 @@
   border: none;
 }
 
+.scroll_box{
+  max-height: 600px;
+  overflow-y: auto;
+  margin-bottom: 30px;
+  /* border: 1px solid red; */
+}
+
+.map_tabs_2 .tab-content{
+  width: 100%;
+  max-width: 810px;
+  margin: 0 auto;
+  overflow: auto;
+}
+
 /* =====================================
     Markers
 ===================================== */
