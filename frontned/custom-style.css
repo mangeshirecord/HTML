@@ -224,6 +224,13 @@
   padding-right: 15px;
 }
 
+.map_locate .map_addr_box .state_label{
+  color: #a94442;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
 .map_locate .map_addr_box{
   flex: 0 0 358px;
   max-width: 358px;
