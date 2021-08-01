@@ -11,7 +11,7 @@ $(document).ready(function() {
         location.reload();
     });
 
-    var scree_width_uae = $('.map_tabs_2 .tab-content').width();
+    var scree_width_uae = $('.map_tabs_2 .map_area').width();
     console.log("SW " + scree_width_uae);
     var screen_height_uae = window.innerHeight;
 

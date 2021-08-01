@@ -11,7 +11,7 @@ $(document).ready(function() {
         location.reload();
     });
 
-    var scree_width = $('.map_tabs_2 .tab-content').width();
+    var scree_width = $('.map_tabs_2 .map_area').width();
     // console.log("SW " + scree_width);
     // var scree_width = document.body.scrollWidth;  Full Screen Width
     var screen_height = window.innerHeight;

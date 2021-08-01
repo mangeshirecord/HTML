@@ -93,11 +93,11 @@
   /* border: 1px solid red; */
 }
 
-.map_tabs_2 .tab-content{
+.map_tabs_2 .map_area{
   width: 100%;
   max-width: 810px;
   margin: 0 auto;
-  overflow: auto;
+  /* overflow: auto; */
 }
 
 /* =====================================
@@ -203,4 +203,68 @@
 .cont_box:hover,
 .cont_box:focus{
   color: #000;
+}
+
+
+.map_locate{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.map_locate .row,
+.map_locate .map_addr_box .list-unstyled{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.map_locate .map_addr_box,
+.map_locate .map_area{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.map_locate .map_addr_box{
+  flex: 0 0 358px;
+  max-width: 358px;
+}
+
+.map_locate .map_addr_box{
+  max-height: 864px;
+  padding-right: 0;
+}
+
+.map_locate .map_addr_box .col-md-4,
+.map_locate .map_addr_box .state_label{
+  width: auto;
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.map_locate .mCSB_inside > .mCSB_container {
+  margin-right: 18px;
+}
+
+
+.map_locate .map_area{
+  max-width: 810px;
+  flex: 0 0 810px;
+  position: relative;
+}
+
+@media only screen and (device-width: 1199px), only screen and (max-width: 1199px) {
+
+  .map_locate > .row{flex-direction: column-reverse;}
+
+  .map_locate .map_area{
+    flex: 0 0 auto;
+    }
+
+  .map_locate .map_addr_box{
+    padding-right: 30px;
+    margin: 0 auto;
+  }
+
 }
