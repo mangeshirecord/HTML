@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Register :: IRecord</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="colorlib.com">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css">
+
+	<link rel="stylesheet" href="css/bootstrap.min.v4.css">
+	<link rel="stylesheet" href="css/select2.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<div class="d-flex Login_box">
+		<div class="cms_display_data d-flex">
+			<div>
+				A
+			</div>
+		</div>
+		<div class="cms_reg_form d-flex">
+			<div class="wrapper">
+				<form action="">
+					<div class="text-center mb-4">
+						<img src="images/logo.png" alt="IRecord" />
+						<h1 style="margin-bottom: 15px;">Member Login</h1>
+					</div>
+		
+					<!-- <div class="checkout-wrap">
+						<ul class="checkout-bar nav_tabs d-flex">
+							<li class="active"><a href="#tab_1" data-toggle="tab"></a></li>
+							<li class=""><a href="#tab_2" data-toggle="tab"></a></li>
+						</ul>
+					</div> -->
+				   <div class="">
+					   <div class="tabbable-panel">
+						   <div class="tabbable-line">
+								<ul class="nav nav-tabs d-none">
+									<li class="active"><a href="#tab_1" data-toggle="tab">A</a></li>
+									<li><a href="#tab_2" data-toggle="tab">A</a></li>
+								</ul>
+							   <div class="tab-content mt-3">
+									<!-- 1 -->
+									<div class="tab-pane fade active show" id="tab_1">
+										<div class="form-holder mb-3">
+											<label class="mb-0" for="">Select Member:</label>
+											<div class="d-flex">
+												<select class="form-control select2">
+													<option value="-1">Select Member</option>
+													<option value="AK">Member 1</option>
+													<option value="HI">Member 2</option>
+													<option value="HI">Member 3</option>
+													<option value="HI">Member 4</option>
+												</select>
+											</div>
+										</div>
+										<div class="form-holder">
+											<label class="mb-0" for="">Financial Year:</label>
+											<div class="d-flex">
+                                                <div class="input-group tbl_int_grp">
+													<select class="form-control select2_multi" multiple="multiple">
+														<option value="-1">Select Financial Year</option>
+														<option value="m1">From: 01-03-2010 To: 01-04-2011</option>
+														<option value="m1">From: 01-03-2011 To: 01-04-2012</option>
+														<option value="m1">From: 01-03-2012 To: 01-04-2013</option>
+														<option value="m1">From: 01-03-2013 To: 01-04-2014</option>
+														<option value="m1">From: 01-03-2014 To: 01-04-2015</option>
+														<option value="m1">From: 01-03-2015 To: 01-04-2016</option>
+														<option value="m1">From: 01-03-2016 To: 01-04-2017</option>
+														<option value="m1">From: 01-03-2017 To: 01-04-2018</option>
+														<option value="m1">From: 01-03-2018 To: 01-04-2019</option>
+														<option value="m1">From: 01-03-2019 To: 01-04-2020</option>
+													</select>
+												</div>
+												<a href="javascript:;" class="d-flex align-items-center no_wrap btn btn-primary ml-2">
+													&#43; Add
+												</a>
+											</div>
+										</div>
+
+										<div class="table-responsive mt-3">
+											<table class="table table-sm table-bordered">
+												<thead class="thead-light">
+													<tr>
+														<th>Sr No</th>
+														<th>Code</th>
+														<th>From Date</th>
+														<th>To Date</th>
+														<th>Actions</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>1</td>
+														<td>Irecord001</td>
+														<td>10-08-2020</td>
+														<td>10-08-2021</td>
+														<td>
+															<a href="javascript:;" class="btn btn-outline-primary btn-sm">
+																Login &rarr;
+															</a>
+														</td>
+													</tr>
+													<tr>
+														<td>2</td>
+														<td>Irecord001</td>
+														<td>10-08-2020</td>
+														<td>10-08-2021</td>
+														<td>
+															<a href="javascript:;" class="btn btn-outline-primary btn-sm">
+																Login &rarr;
+															</a>
+														</td>
+													</tr>
+													<tr>
+														<td>3</td>
+														<td>Irecord001</td>
+														<td>10-08-2020</td>
+														<td>10-08-2021</td>
+														<td>
+															<a href="javascript:;" class="btn btn-outline-primary btn-sm">
+																Login &rarr;
+															</a>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+		
+										<!-- <div class="text-right form-row mt-4">
+											<span class="btn btn-primary ml-auto text-uppercase next-tab">Next</span>
+										</div> -->
+									</div>
+		
+									<!-- 2 -->
+									<!-- <div class="tab-pane fade" id="tab_2">
+										<h2 class="text-center mb-4">Investors</h2>
+		
+										<div class="mb-2 w-100">
+											<strong>Single Live Report For:</strong>
+											<ul class="list_line mb-4">
+												<li>Multiple Member</li>
+												<li>Mutiple Broker</li>
+												<li>Multiple Consultant</li>
+												<li>Multiple Timeframe</li>
+											</ul>
+										</div>
+										<div class="mb-0 w-100">
+											<strong>Share Reports with:</strong>
+											<ul class="list_line mb-4">
+												<li>Advisor</li>
+												<li>Accountant</li>
+											</ul>
+										</div>
+		
+										<div class="justify-content-center form-row mt-4">
+											<span class="btn btn-primary btn-lg text-uppercase">Subscribe</span>
+										</div>
+		
+										<div class="text-right form-row mt-4">
+											<span class="btn btn-primary ml-auto text-uppercase next-tab">Next</span>
+										</div>
+									</div> -->
+		
+		
+									<!-- End -->
+							   </div>
+						   </div>
+					   </div>
+				   </div>
+				</form>
+			</div>
+			<!-- End -->
+		</div>
+	</div>
+	
+
+
+	<!-- Modal 1 -->
+	<div class="modal fade" id="modal_1" tabindex="-1" data-backdrop="static" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Select Default Broker</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="form-row mb-3">
+						<div class="form-holder">
+							<label for="">
+								Select Default Broker:
+							</label>
+							<div class="d-flex">
+								<select class="form-control select2">
+									<option value="-1">Select</option>
+									<option value="AK">Broker 1</option>
+									<option value="HI">Broker 2</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="form-holder">
+							<label for="">
+								Select Default Demat A/c:
+							</label>
+							<div class="d-flex">
+								<select class="form-control select2">
+									<option value="-1">Select</option>
+									<option value="AK">Demat 1</option>
+									<option value="HI">Demat 2</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary" data-dismiss="modal">Save</button>
+					<button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal 2 -->
+	<div class="modal fade" id="modal_2" tabindex="-1" data-backdrop="static" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Select Default Broker</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="form-row">
+						<div class="form-holder">
+							<label for="">
+								Select Default Demat A/c:
+							</label>
+							<div class="d-flex">
+								<select class="form-control select2">
+									<option value="-1">Select</option>
+									<option value="AK">Demat 1</option>
+									<option value="HI">Demat 2</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary" data-dismiss="modal">Save</button>
+					<button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Modal 3 -->
+	<div class="modal fade" id="modal_3" tabindex="-1" data-backdrop="static" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Select Default Broker</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="form-row mb-3">
+						<div class="form-holder">
+							<label for="">
+								Select Default Bank A/c:
+							</label>
+							<div class="d-flex">
+								<select class="form-control select2">
+									<option value="-1">Select</option>
+									<option value="AK">Bank 1</option>
+									<option value="HI">Bank 2</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary" data-dismiss="modal">Save</button>
+					<button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/jquery-3.5.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/select2.min.js"></script>
+
+	<!-- <script src="js/jquery.steps.js"></script>
+	<script src="js/main.js"></script> -->
+	<script>
+		$(document).ready(function () {
+			$(".select2").select2({
+				maximumSelectionLength: 3
+			});
+			$(".select2_multi").select2({
+			});
+
+
+
+			$('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+				var href = $(e.target).attr('href');
+				var $curr = $(".checkout-bar  a[href='" + href + "']").parent();
+				$('.checkout-bar li').removeClass();
+				$curr.addClass("active");
+				$curr.prevAll().addClass("visited");
+			});
+		});
+
+		jQuery('body').on('click','.next-tab', function(){
+			var next = jQuery('.nav_tabs > .active').next('li');
+			if(next.length)
+			{
+				next.find('a').trigger('click');
+			}
+			// else
+			// {
+			//     jQuery('#myTabs a:first').tab('show');
+			// }
+		});
+		jQuery('body').on('click','.skip-tab', function(){
+			var next = jQuery('.nav_tabs > .active').next('li');
+			if(next.length)
+			{
+				next.find('a').trigger('click');
+			}
+		});
+
+		// jQuery('body').on('click','.previous-tab', function(){
+		//     var prev = jQuery('.nav-tabs > .active').prev('li')
+		//     if(prev.length){
+		//         prev.find('a').trigger('click');
+		//     }else{
+		//         jQuery('#myTabs a:last').tab('show');
+		//     }
+		// });
+		$('#option1').click(function () {
+			$('.nav-tabs a[href="#tab_2"]').tab('show');
+		});
+		$('#option2').click(function () {
+			$('.nav-tabs a[href="#tab_3"]').tab('show');
+		});
+		$('#option3').click(function () {
+			$('.nav-tabs a[href="#tab_4"]').tab('show');
+		});
+
+		$(".custom-file-input").on("change", function() {
+			var fileName = $(this).val().split("\\").pop();
+			$(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+		});
+	</script>
+</body>
+
+</html>

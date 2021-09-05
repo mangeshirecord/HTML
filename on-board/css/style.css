@@ -1,22 +1,11 @@
-/* @font-face {
-  font-family: "Poppins-Regular";
-  src: url("../fonts/poppins/Poppins-Regular.ttf"); }
-@font-face {
-  font-family: "Poppins-SemiBold";
-  src: url("../fonts/poppins/Poppins-SemiBold.ttf"); }
-@font-face {
-  font-family: "Poppins-Medium";
-  src: url("../fonts/poppins/Poppins-Medium.ttf"); }
-@font-face {
-  font-family: "Muli-Bold";
-  src: url("../fonts/muli/Muli-Bold.ttf"); } */
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 * {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
+
+.no_wrap{white-space: nowrap;}
 
 html,body{
 	height: 100%;
@@ -96,7 +85,49 @@ body {
 	background-size: cover; */
 	background: #F9F7FC;
   }
+
+
+
+.Login_box{
+	/* flex-direction: column; */
+	flex: 1 0 auto;
+}
+
+.Login_box .cms_display_data,
+.Login_box .cms_reg_form{
+	max-width: 50%;
+	flex: 0 0 50%;
+	position: relative;
+}
+
+.wrapper h1{
+	color: #007bff;
+	font-size: 1.8em;
+	line-height: normal;
+	margin-top: 15px;
+}
+
+.form-holder{display: inline-block;}
+
+.select2-container .select2-selection--multiple{
+	min-height: 42px;
+	border: 1px solid #e6e6e6;
+	padding-top: 3px;
+}
+
+.select2-selection--multiple:before {
+    content: "";
+    position: absolute;
+    right: 7px;
+    top: 42%;
+    border-top: 5px solid #888;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+}
   
+.table tr th,
+.table tr td{vertical-align: middle;}
+
 .wrapper {
 	width: 100%;
 	max-width: 1400px;
@@ -134,7 +165,7 @@ body {
   
   .wrapper form {
 	width: 100%;
-	max-width: 540px;
+	max-width: 720px;
 	margin: 0 auto;
   }
   
@@ -958,20 +989,30 @@ ul.checkout-bar li.visited:after {
 }
 
 @media (max-width: 991px) {
-.wrapper {
-	justify-content: center;
-}
-/* .wrapper .image-holder {
-	display: none;
-} */
-.wrapper form {
-	width: 60%;
-}
-#wizard {
-	margin-right: 0;
-	padding-left: 40px;
-	padding-right: 40px;
-}
+	.wrapper {
+		justify-content: center;
+	}
+	/* .wrapper .image-holder {
+		display: none;
+	} */
+	.wrapper form {
+		width: 60%;
+	}
+	#wizard {
+		margin-right: 0;
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+
+	.Login_box .cms_display_data{display: none !important;}
+	.Login_box .cms_reg_form{
+		max-width: 100%;
+		flex: 0 0 100%;
+	}
+
+	.Login_box .cms_reg_form .wrapper{
+		height: auto;
+	}
 }
 
 @media (max-width: 767px) {
