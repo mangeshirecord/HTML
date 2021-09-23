@@ -100,6 +100,12 @@ body {
 	position: relative;
 }
 
+.cms_display_data .left_banner{
+	width: 100%;
+	max-width: 500px;
+	margin: auto;
+}
+
 .wrapper h1{
 	color: #007bff;
 	font-size: 1.8em;
@@ -965,7 +971,23 @@ ul.checkout-bar li.visited:after {
 .script_list table tr td{
 	vertical-align: middle;
 }
-  
+
+.owl-dots{margin-top: 5px;}
+
+.owl-carousel .owl-dot span{
+	background: rgba(0, 0, 0, 0.3);
+	width: 10px;
+	height: 10px;
+	display: inline-block;
+	border-radius: 25px;
+	transition: all 0.4s ease;
+}
+.owl-carousel .owl-dot:not(:last-child){margin-right: 10px;}
+
+.owl-carousel .owl-dot.active span{
+	background: #007bff;
+	width: 35px;
+}
 
 /* ==========================================
 	Media Query
