@@ -765,6 +765,11 @@ small{font-size: 81%;}
     width: 100%;
 }
 
+.max_height_tbl{
+    max-height: 410px;
+    overflow-y: auto;
+}
+
 /* =============================================
     Responsive
 ============================================= */

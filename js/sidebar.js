@@ -65,7 +65,7 @@ document.write('<ul class="metismenu list-unstyled" id="side-menu">');
             document.write('<li class="entry_1"><a href="'+header_url+'entry-trade/jv-entry.html">JV Entry</a></li>');
             document.write('<li class="entry_2"><a href="'+header_url+'entry-trade/broker-bill-list.html">Broker Bill</a></li>');
             document.write('<li class="entry_3"><a href="'+header_url+'entry-trade/bank-statement/list.html">Bank Statement</a></li>');
-            document.write('<li class="entry_4"><a href="'+header_url+'entry-trade/trade-view.html">Trade View</a></li>');
+            // document.write('<li class="entry_4"><a href="'+header_url+'entry-trade/trade-view.html">Trade View</a></li>');
             document.write('<li class="entry_5"><a href="'+header_url+'entry-trade/receipt-payment.html">Receipt / Payment</a></li>');
             document.write('<li class="entry_6"><a href="'+header_url+'entry-trade/ipo.html">IPO</a></li>');
             document.write('<li class="entry_7"><a href="'+header_url+'entry-trade/opening-stock/list.html">Opening Stock</a></li>');
