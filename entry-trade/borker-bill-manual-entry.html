@@ -201,7 +201,7 @@
                     <div class="container-fluid">
 
                         <div class="display_adds_parent">
-                            <div class="display_adds_view_box">
+                            <div class="display_adds_view_box display_adds_2_col">
                                 <!-- start page title -->
                                 <div class="row">
                                     <div class="col-12">
@@ -219,10 +219,58 @@
                                 <div class="card">
                                     <div class="card-body">
                                         <div class="row form_2">
-                                            <!-- <div class="col-sm-12 col-md-6 mb-3 d-flex">
+                                            <div class="col-sm-12 col-md-6 mb-3 d-flex">
+                                                <label class="mb-0">Segment:</label>
+                                                <select class="form-select select2">
+                                                    <option>-- Select Segment --</option>
+                                                    <option>Cash</option>
+                                                    <option>Segment 2</option>
+                                                    <option>Segment 3</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-sm-12 col-md-6 mb-3 d-flex">
                                                 <label class="mb-0">Date:</label>
                                                 <input type="text" class="form-control datepicker" data-date-format="dd-mm-yyyy" placeholder="DD-MM-YYYY" />
-                                            </div> -->
+                                            </div>
+                                            <div class="col-sm-12 col-md-6 mb-3 d-flex">
+                                                <label class="mb-0">Broker:</label>
+                                                <div class="input-group tbl_int_grp">
+                                                    <select class="form-select select2">
+                                                        <option>-- Select Broker --</option>
+                                                        <option>Broker 1</option>
+                                                        <option>Broker 2</option>
+                                                        <option>Broker 3</option>
+                                                    </select>
+                                                    <a style="min-width: 80px;" href="#modal_broker" class="btn btn-outline-primary" data-bs-toggle="modal">
+                                                        <i class="la la-plus"></i> Add
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12 col-md-6 mb-3 d-flex">
+                                                <label class="mb-0">Demat:</label>
+                                                <div class="input-group tbl_int_grp">
+                                                    <select class="form-select select2">
+                                                        <option>-- Select Demat --</option>
+                                                        <option>Demat 1</option>
+                                                        <option>Demat 2</option>
+                                                        <option>Demat 3</option>
+                                                    </select>
+                                                    <a style="min-width: 80px;" href="#modal_add" class="btn btn-outline-primary" data-bs-toggle="modal">
+                                                        <i class="la la-plus"></i> Add
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12 col-md-6 mb-3 d-flex">
+                                                <label class="mb-0">Settlement No:</label>
+                                                <input type="text" class="form-control" placeholder="Enter Settlement No" />
+                                            </div>
+                                            <div class="col-sm-12 col-md-6 mb-3 d-flex">
+                                                <label class="mb-0">Bill No:</label>
+                                                <input type="text" class="form-control" placeholder="Enter Bill No" />
+                                            </div>
+                                            
+
+
                                             <div class="col-sm-12 col-md-6 mb-3 d-flex">
                                                 <label class="mb-0">Consultant:</label>
                                                 <select class="form-select select2">
@@ -250,6 +298,8 @@
                                                     <option>Holding Type 3</option>
                                                 </select>
                                             </div>
+
+
                                             <div class="col-sm-12 col-md-6 mb-3 d-flex">
                                                 <label class="mb-0">Script Name:</label>
                                                 <select class="form-select select2">

@@ -470,6 +470,13 @@ small{font-size: 81%;}
     width: 100%;
 }
 
+.display_adds_view_box.display_adds_2_col .row > .col-sm-12.col-md-6{
+    -webkit-flex: 0 0 50%;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    width: 100%;
+}
+
 .form-select.select2{
     padding: .47rem 1.75rem .47rem .75rem !important;
     border: 1px solid #ced4da !important;
@@ -765,8 +772,12 @@ small{font-size: 81%;}
     width: 100%;
 }
 
-.max_height_tbl{
+.max_height_tbl_view{
     max-height: 410px;
+    overflow-y: auto;
+}
+.max_height_tbl_edit{
+    max-height: 650px;
     overflow-y: auto;
 }
 

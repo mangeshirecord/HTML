@@ -223,7 +223,12 @@
                                 <div class="row form_2 view_mode">
                                     <div class="col-sm-12 col-md-4 mb-2 d-flex">
                                         <label class="mb-0">Segment Name:</label>
-                                        <input type="text" class="form-control" placeholder="Segment Name" value="Cash" />
+                                        <select class="form-select select2">
+                                            <option>-- Select Segment --</option>
+                                            <option selected>Cash</option>
+                                            <option>Segment 2</option>
+                                            <option>Segment 3</option>
+                                        </select>
                                     </div>
                                     <div class="col-sm-12 col-md-4 mb-2 d-flex">
                                         <label class="mb-0">Date:</label>
@@ -279,7 +284,7 @@
                                     </div>
                                 </div>
 
-                                <div class="table-responsive table-small mt-3">
+                                <div class="table-responsive table-small max_height_tbl_edit mt-3">
                                     <table class="table defaultTable sar-table table-hover table-bordered mb-0">
                                         <thead class="table-light">
                                             <tr>
