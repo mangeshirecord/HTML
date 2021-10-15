@@ -770,6 +770,45 @@ small{font-size: 81%;}
     overflow-y: auto;
 }
 
+.wd_buy_sell{min-width: 100px;}
+.wd_scrt_nm{min-width: 230px !important;}
+.wd_per_unit{min-width: 70px;}
+
+.final_label ul{
+    margin-left: -7px;
+    margin-right: -7px;
+}
+
+.final_label ul li{
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+.final_label ul li strong{
+    font-weight: 600;
+    color: rgba(var(--bs-primary),1);
+}
+
+.exp_addless .la-plus,
+.exp_addless .la-minus{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+}
+
+.exp_addless .la-plus{
+    color: rgba(52,195,143,1);
+    background: rgba(52,195,143, .2);
+}
+
+.exp_addless .la-minus{
+    color: rgba(244,106,106,1);
+    background: rgba(244,106,106, .2);
+}
+
 /* =============================================
     Responsive
 ============================================= */
@@ -858,4 +897,11 @@ small{font-size: 81%;}
     .jv_entry_box.rec_pay_box .col_2,
     .jv_entry_box.rec_pay_box .col_3,
     .jv_entry_box.rec_pay_box .col_4{max-width: 100%;}
+
+    .view_mode.form_2 [class*="col-"] > label{
+        width: 100%;
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+        max-width: 100%;
+    }
 }

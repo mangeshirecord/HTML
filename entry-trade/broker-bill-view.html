@@ -258,7 +258,7 @@
                                     </div>
                                 </div>
 
-                                <div class="table-responsive table-small max_height_tbl">
+                                <div class="table-responsive table-small mt-2 max_height_tbl">
                                     <table class="table defaultTable sar-table table-hover table-bordered mb-0">
                                         <thead class="table-light">
                                             <tr>
@@ -556,114 +556,93 @@
                                     </table>
                                 </div>
 
-                                <div class="expense_view mt-5">
-                                    <h4 class="card-title mb-3">Verify Expenses</h4>
-
-                                    <div class="row charges_box">
-                                        <!-- 1 -->
-                                        <div class="col-sm-12 col-md-4">
-                                            <div class="d-flex align-items-center flex-wrap">
-                                                <span class="span_label">Running Ledger Balanace</span>
-                                                <div class="input-group">
-                                                    <span class="input-group-text" id="basic-addon1">@</span>
-                                                    <input type="text" class="form-control" placeholder="">
-                                                </div>
-                                                <span>Rate</span>
-                                            </div>
-                                        </div>
-                                        <!-- 2 -->
-                                        <div class="col-sm-12 col-md-4">
-                                            <div class="d-flex align-items-center flex-wrap">
-                                                <span class="span_label">BSE/NSE Transaction Charges</span>
-                                                <div class="input-group">
-                                                    <span class="input-group-text" id="basic-addon1">@</span>
-                                                    <input type="text" class="form-control" placeholder="">
-                                                </div>
-                                                <span>Rate</span>
-                                            </div>
-                                        </div>
-                                        <!-- 3 -->
-                                        <div class="col-sm-12 col-md-4">
-                                            <div class="d-flex align-items-center flex-wrap">
-                                                <span class="span_label">S.T.T Charges</span>
-                                                <div class="input-group">
-                                                    <span class="input-group-text" id="basic-addon1">@</span>
-                                                    <input type="text" class="form-control" placeholder="">
-                                                </div>
-                                                <span>Rate</span>
-                                            </div>
-                                        </div>
-                                        <!-- 3 -->
-                                        <div class="col-sm-12 col-md-4">
-                                            <div class="d-flex align-items-center flex-wrap">
-                                                <span class="span_label">Brokerage</span>
-                                                <div class="input-group">
-                                                    <span class="input-group-text" id="basic-addon1">@</span>
-                                                    <input type="text" class="form-control" placeholder="">
-                                                </div>
-                                                <span>Rate</span>
-                                            </div>
-                                        </div>
-                                        <!-- 4 -->
-                                        <div class="col-sm-12 col-md-4">
-                                            <div class="d-flex align-items-center flex-wrap">
-                                                <span class="span_label">Stamp Duty</span>
-                                                <div class="input-group">
-                                                    <span class="input-group-text" id="basic-addon1">@</span>
-                                                    <input type="text" class="form-control" placeholder="">
-                                                </div>
-                                                <span>Rate</span>
-                                            </div>
-                                        </div>
-                                        <!-- 5 -->
-                                        <div class="col-sm-12 col-md-4">
-                                            <div class="d-flex align-items-center flex-wrap">
-                                                <span class="span_label">SEBI T.O. Fees</span>
-                                                <div class="input-group">
-                                                    <span class="input-group-text" id="basic-addon1">@</span>
-                                                    <input type="text" class="form-control" placeholder="">
-                                                </div>
-                                                <span>Rate</span>
-                                            </div>
-                                        </div>
-                                        <!-- 6 -->
-                                        <div class="col-sm-12 col-md-4">
-                                            <div class="d-flex align-items-center flex-wrap">
-                                                <span class="span_label">CGST</span>
-                                                <div class="input-group">
-                                                    <span class="input-group-text" id="basic-addon1">@</span>
-                                                    <input type="text" class="form-control" placeholder="">
-                                                </div>
-                                                <span>Rate</span>
-                                            </div>
-                                        </div>
-                                        <!-- 7 -->
-                                        <div class="col-sm-12 col-md-4">
-                                            <div class="d-flex align-items-center flex-wrap">
-                                                <span class="span_label">SGST or IGST</span>
-                                                <div class="input-group">
-                                                    <span class="input-group-text" id="basic-addon1">@</span>
-                                                    <input type="text" class="form-control" placeholder="">
-                                                </div>
-                                                <span>Rate</span>
-                                            </div>
-                                        </div>
-                                        <!-- 8 -->
-                                        <div class="col-sm-12 col-md-4">
-                                            <div class="d-flex align-items-center flex-wrap">
-                                                <span class="span_label">Miscellaneous Changes</span>
-                                                <div class="input-group">
-                                                    <span class="input-group-text" id="basic-addon1">@</span>
-                                                    <input type="text" class="form-control" placeholder="">
-                                                </div>
-                                                <span>Rate</span>
-                                            </div>
+                                <div class="row mt-5">
+                                    <div class="col-sm-12 col-md-6">
+                                        <div class="table-responsive exp_addless">
+                                            <table class="table sar-table table-hover table-bordered mb-0">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Expenses Name</th>
+                                                        <th>Rate</th>
+                                                        <th>Amount</th>
+                                                        <th>
+                                                            Add/Less
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="whitespace_nowrap">BSE/NSE Transaction Charges</td>
+                                                        <td>
+                                                            150.00
+                                                        </td>
+                                                        <td>
+                                                            250.00
+                                                        </td>
+                                                        <td class="d-flex justify-content-center">
+                                                            <i class="la la-plus"></i>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="whitespace_nowrap">S.T.T Charges</td>
+                                                        <td>
+                                                            150.00
+                                                        </td>
+                                                        <td>
+                                                            250.00
+                                                        </td>
+                                                        <td class="d-flex justify-content-center">
+                                                            <i class="la la-plus"></i>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="whitespace_nowrap">Brokerage</td>
+                                                        <td>
+                                                            150.00
+                                                        </td>
+                                                        <td>
+                                                            250.00
+                                                        </td>
+                                                        <td class="d-flex justify-content-center">
+                                                            <i class="la la-plus"></i>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="whitespace_nowrap">Stamp Duty</td>
+                                                        <td>
+                                                            150.00
+                                                        </td>
+                                                        <td>
+                                                            250.00
+                                                        </td>
+                                                        <td class="d-flex justify-content-center">
+                                                            <i class="la la-minus"></i>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="whitespace_nowrap">SEBI T.O. Fees</td>
+                                                        <td>
+                                                            150.00
+                                                        </td>
+                                                        <td>
+                                                            250.00
+                                                        </td>
+                                                        <td class="d-flex justify-content-center">
+                                                            <i class="la la-minus"></i>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="col-sm-12 text-center mt-3">
-                                    <input type="submit" class="btn btn-primary" value="Approve Now" />
+                                <div class="mt-4 final_label">
+                                    <ul class="d-flex justify-content-center flex-wrap mb-0">
+                                        <li class="d-flex align-content-center"><span class="px-1">Stamp Duty</span><strong>1500.10</strong></li>
+                                        <li class="d-flex align-content-center"><span class="px-1">SEBI T.O. Fees</span><strong>1500.10</strong></li>
+                                        <li class="d-flex align-content-center"><span class="px-1">Brokerage</span><strong>1500.10</strong></li>
+                                    </ul>
                                 </div>
 
                             </div>
