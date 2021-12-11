@@ -260,7 +260,7 @@
                                     </div>
                                     <div class="col-sm-12 col-md-6 mb-3 d-flex">
                                         <label class="mb-0">Holding Type:</label>
-                                        <select class="form-select select2">
+                                        <select class="form-select select2-hide_search">
                                             <option value="cash">Share Invesment (Equity) A/C</option>
                                             <option value="bank">Share Trading A/C</option>
                                         </select>
@@ -284,6 +284,7 @@
                                             <tr>
                                                 <th>Date</th>
                                                 <th>Consultant</th>
+                                                <th>Holding Type</th>
                                                 <th>Demat Account</th>
                                                 <th>Stock Quantity</th>
                                                 <th>Stock Rate</th>
@@ -296,6 +297,7 @@
                                             <tr>
                                                 <td>06-12-2021</td>
                                                 <td>Vishal Dalal</td>
+                                                <td>Share Trading A/C</td>
                                                 <td>Demat 1</td>
                                                 <td style="width:150px"><input type="text" class="form-control" placeholder="Stock Qty" /></td>
                                                 <td style="width:150px"><input type="text" class="form-control" placeholder="Stock Rate" /></td>
@@ -385,6 +387,9 @@
         $(document).ready(function() {
             $(".select2").select2({
 				maximumSelectionLength: 3
+			});
+            $(".select2-hide_search").select2({
+				minimumResultsForSearch: Infinity
 			});
 
             $('.datepicker').datepicker({
