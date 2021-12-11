@@ -33,6 +33,7 @@ document.write('<ul class="metismenu list-unstyled" id="side-menu">');
         document.write('</a>');
         document.write('<ul class="sub-menu" aria-expanded="false">');
             document.write('<li class="coraction_1"><a href="'+header_url+'bonus-entry-screen.html">Bonus Entry</a></li>');
+            document.write('<li class="coraction_2"><a href="'+header_url+'split-entry.html">Split Entry</a></li>');
         document.write('</ul>');
     document.write('</li>');
     document.write('<li class="topmenu_4">');
